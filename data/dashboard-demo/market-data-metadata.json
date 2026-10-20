@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dataset_kind": "synthetic_fixture",
+  "contains_real_market_data": false,
+  "source_provider": null,
+  "retrieved_at_utc": null,
+  "prepared_date": "2026-10-19",
+  "currency": "INR",
+  "money_unit": "paise",
+  "timestamps_timezone": "UTC",
+  "symbols": [
+    "ALPHA",
+    "BETA",
+    "GAMMA",
+    "DELTA",
+    "OMEGA"
+  ],
+  "provenance": "Deterministic fictional coursework data generated locally by scripts/generate_dashboard_demo.py; no exchange, account, IBM Cloud, API, random source, or network data is used.",
+  "market_session": "Fictional 2026-01-02 09:00..09:49 UTC, one synthetic quote per minute per stock.",
+  "adjustment_policy": "Not applicable to fictional instruments; no corporate actions.",
+  "fallback_policy": "Explicit dashboard demo fixture; never a fallback for supplied inputs.",
+  "record_count": 250,
+  "order_count": 550,
+  "holding_count": 50,
+  "expected_counts": {
+    "SETTLED": 500,
+    "PENDING": 0,
+    "REJECTED": 50
+  },
+  "expected_matched_pairs": 250,
+  "prices_sha256": "645c0939bea21ad56855bb0bfe793a8814d3e61351d8bdff60c70f2dab746755",
+  "source_files": {
+    "orders.txt": {
+      "sha256": "7adc9b4d3656d6933248c6bd81c58f514f2eea14086558bfa5243ba1e338c5f5"
+    },
+    "holdings.txt": {
+      "sha256": "5aac1eac90896781e23550d99cf4def86f9436574f8545d7d12ebb07cc566fcc"
+    },
+    "prices.txt": {
+      "sha256": "645c0939bea21ad56855bb0bfe793a8814d3e61351d8bdff60c70f2dab746755"
+    },
+    "expected-results.json": {
+      "sha256": "6b54c30822034b032294ca4c1bf838f60360ae6fd0ea579b3236942fba72dcee"
+    }
+  },
+  "generator_sha256": "fe8a1c79bfb158b3a8c3f426ffca1be6273e5687dd2896809c81b5ed01e16613",
+  "expected_results_policy": "Algebraic construction independent of engine output; tests compare actual output to this contract."
+}

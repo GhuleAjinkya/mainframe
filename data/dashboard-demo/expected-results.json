@@ -1,0 +1,7338 @@
+{
+  "schema_version": 1,
+  "derivation": "Derived from constructed disjoint pairs, without invoking the engine: quantities 1..250 each have one BUY and one SELL at the same minute/stock reference; BUY limits exceed SELL limits and both are inside the 10% band. Each seller starts with 2000 shares per stock and sells at most 1375. Each rejected row is invalid before reservation. Each pair executes at its SELL limit, transfers its quantity once, and contributes quantity times SELL limit to trade value. Final valuation uses minute-49 quotes.",
+  "input_count": 550,
+  "return_code": 0,
+  "counts": {
+    "SETTLED": 500,
+    "PENDING": 0,
+    "REJECTED": 50
+  },
+  "accepted_orders": 500,
+  "matched_pairs": 250,
+  "reason_counts": {
+    "OK000": 500,
+    "DUP001": 10,
+    "HOLD01": 10,
+    "PRICE01": 10,
+    "SIDE001": 10,
+    "DATA001": 10
+  },
+  "executed_quantity": 31375,
+  "executed_notional_paise": 533986085,
+  "final_valuation_paise": 857360000,
+  "initial_stock_quantities": {
+    "ALPHA": 10000,
+    "BETA": 10000,
+    "GAMMA": 10000,
+    "DELTA": 10000,
+    "OMEGA": 10000
+  },
+  "valuation_timestamp": "20260102094937",
+  "orders": [
+    {
+      "line": 1,
+      "order_id": "BUY000001",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10000,
+      "execution_price_paise": 9979,
+      "reference_notional_paise": 10000
+    },
+    {
+      "line": 2,
+      "order_id": "SELL000001",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10000,
+      "execution_price_paise": 9979,
+      "reference_notional_paise": 10000
+    },
+    {
+      "line": 3,
+      "order_id": "BUY000002",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20500,
+      "execution_price_paise": 20478,
+      "reference_notional_paise": 41000
+    },
+    {
+      "line": 4,
+      "order_id": "SELL000002",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20500,
+      "execution_price_paise": 20478,
+      "reference_notional_paise": 41000
+    },
+    {
+      "line": 5,
+      "order_id": "BUY000003",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12075,
+      "execution_price_paise": 12052,
+      "reference_notional_paise": 36225
+    },
+    {
+      "line": 6,
+      "order_id": "SELL000003",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12075,
+      "execution_price_paise": 12052,
+      "reference_notional_paise": 36225
+    },
+    {
+      "line": 7,
+      "order_id": "BUY000004",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33200,
+      "execution_price_paise": 33176,
+      "reference_notional_paise": 132800
+    },
+    {
+      "line": 8,
+      "order_id": "SELL000004",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33200,
+      "execution_price_paise": 33176,
+      "reference_notional_paise": 132800
+    },
+    {
+      "line": 9,
+      "order_id": "BUY000005",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8050,
+      "execution_price_paise": 8025,
+      "reference_notional_paise": 40250
+    },
+    {
+      "line": 10,
+      "order_id": "SELL000005",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8050,
+      "execution_price_paise": 8025,
+      "reference_notional_paise": 40250
+    },
+    {
+      "line": 11,
+      "order_id": "BUY000005",
+      "status": "REJECTED",
+      "reason_code": "DUP001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 12,
+      "order_id": "BUY000006",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10033,
+      "execution_price_paise": 10007,
+      "reference_notional_paise": 60198
+    },
+    {
+      "line": 13,
+      "order_id": "SELL000006",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10033,
+      "execution_price_paise": 10007,
+      "reference_notional_paise": 60198
+    },
+    {
+      "line": 14,
+      "order_id": "BUY000007",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20537,
+      "execution_price_paise": 20517,
+      "reference_notional_paise": 143759
+    },
+    {
+      "line": 15,
+      "order_id": "SELL000007",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20537,
+      "execution_price_paise": 20517,
+      "reference_notional_paise": 143759
+    },
+    {
+      "line": 16,
+      "order_id": "BUY000008",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12106,
+      "execution_price_paise": 12085,
+      "reference_notional_paise": 96848
+    },
+    {
+      "line": 17,
+      "order_id": "SELL000008",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12106,
+      "execution_price_paise": 12085,
+      "reference_notional_paise": 96848
+    },
+    {
+      "line": 18,
+      "order_id": "BUY000009",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33239,
+      "execution_price_paise": 33217,
+      "reference_notional_paise": 299151
+    },
+    {
+      "line": 19,
+      "order_id": "SELL000009",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33239,
+      "execution_price_paise": 33217,
+      "reference_notional_paise": 299151
+    },
+    {
+      "line": 20,
+      "order_id": "BUY000010",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8079,
+      "execution_price_paise": 8056,
+      "reference_notional_paise": 80790
+    },
+    {
+      "line": 21,
+      "order_id": "SELL000010",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8079,
+      "execution_price_paise": 8056,
+      "reference_notional_paise": 80790
+    },
+    {
+      "line": 22,
+      "order_id": "REJ000002",
+      "status": "REJECTED",
+      "reason_code": "HOLD01",
+      "reference_price_paise": 20537,
+      "execution_price_paise": null,
+      "reference_notional_paise": 20536979463
+    },
+    {
+      "line": 23,
+      "order_id": "BUY000011",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10000,
+      "execution_price_paise": 9976,
+      "reference_notional_paise": 110000
+    },
+    {
+      "line": 24,
+      "order_id": "SELL000011",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10000,
+      "execution_price_paise": 9976,
+      "reference_notional_paise": 110000
+    },
+    {
+      "line": 25,
+      "order_id": "BUY000012",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20508,
+      "execution_price_paise": 20483,
+      "reference_notional_paise": 246096
+    },
+    {
+      "line": 26,
+      "order_id": "SELL000012",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20508,
+      "execution_price_paise": 20483,
+      "reference_notional_paise": 246096
+    },
+    {
+      "line": 27,
+      "order_id": "BUY000013",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12071,
+      "execution_price_paise": 12045,
+      "reference_notional_paise": 156923
+    },
+    {
+      "line": 28,
+      "order_id": "SELL000013",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12071,
+      "execution_price_paise": 12045,
+      "reference_notional_paise": 156923
+    },
+    {
+      "line": 29,
+      "order_id": "BUY000014",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33212,
+      "execution_price_paise": 33192,
+      "reference_notional_paise": 464968
+    },
+    {
+      "line": 30,
+      "order_id": "SELL000014",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33212,
+      "execution_price_paise": 33192,
+      "reference_notional_paise": 464968
+    },
+    {
+      "line": 31,
+      "order_id": "BUY000015",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8042,
+      "execution_price_paise": 8021,
+      "reference_notional_paise": 120630
+    },
+    {
+      "line": 32,
+      "order_id": "SELL000015",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8042,
+      "execution_price_paise": 8021,
+      "reference_notional_paise": 120630
+    },
+    {
+      "line": 33,
+      "order_id": "REJ000003",
+      "status": "REJECTED",
+      "reason_code": "PRICE01",
+      "reference_price_paise": 12071,
+      "execution_price_paise": null,
+      "reference_notional_paise": 12071
+    },
+    {
+      "line": 34,
+      "order_id": "BUY000016",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10059,
+      "execution_price_paise": 10037,
+      "reference_notional_paise": 160944
+    },
+    {
+      "line": 35,
+      "order_id": "SELL000016",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10059,
+      "execution_price_paise": 10037,
+      "reference_notional_paise": 160944
+    },
+    {
+      "line": 36,
+      "order_id": "BUY000017",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20571,
+      "execution_price_paise": 20548,
+      "reference_notional_paise": 349707
+    },
+    {
+      "line": 37,
+      "order_id": "SELL000017",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20571,
+      "execution_price_paise": 20548,
+      "reference_notional_paise": 349707
+    },
+    {
+      "line": 38,
+      "order_id": "BUY000018",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12128,
+      "execution_price_paise": 12104,
+      "reference_notional_paise": 218304
+    },
+    {
+      "line": 39,
+      "order_id": "SELL000018",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12128,
+      "execution_price_paise": 12104,
+      "reference_notional_paise": 218304
+    },
+    {
+      "line": 40,
+      "order_id": "BUY000019",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33277,
+      "execution_price_paise": 33252,
+      "reference_notional_paise": 632263
+    },
+    {
+      "line": 41,
+      "order_id": "SELL000019",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33277,
+      "execution_price_paise": 33252,
+      "reference_notional_paise": 632263
+    },
+    {
+      "line": 42,
+      "order_id": "BUY000020",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8097,
+      "execution_price_paise": 8071,
+      "reference_notional_paise": 161940
+    },
+    {
+      "line": 43,
+      "order_id": "SELL000020",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8097,
+      "execution_price_paise": 8071,
+      "reference_notional_paise": 161940
+    },
+    {
+      "line": 44,
+      "order_id": "REJ000004",
+      "status": "REJECTED",
+      "reason_code": "SIDE001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 45,
+      "order_id": "BUY000021",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10038,
+      "execution_price_paise": 10018,
+      "reference_notional_paise": 210798
+    },
+    {
+      "line": 46,
+      "order_id": "SELL000021",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10038,
+      "execution_price_paise": 10018,
+      "reference_notional_paise": 210798
+    },
+    {
+      "line": 47,
+      "order_id": "BUY000022",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20554,
+      "execution_price_paise": 20533,
+      "reference_notional_paise": 452188
+    },
+    {
+      "line": 48,
+      "order_id": "SELL000022",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20554,
+      "execution_price_paise": 20533,
+      "reference_notional_paise": 452188
+    },
+    {
+      "line": 49,
+      "order_id": "BUY000023",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12105,
+      "execution_price_paise": 12083,
+      "reference_notional_paise": 278415
+    },
+    {
+      "line": 50,
+      "order_id": "SELL000023",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12105,
+      "execution_price_paise": 12083,
+      "reference_notional_paise": 278415
+    },
+    {
+      "line": 51,
+      "order_id": "BUY000024",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33262,
+      "execution_price_paise": 33239,
+      "reference_notional_paise": 798288
+    },
+    {
+      "line": 52,
+      "order_id": "SELL000024",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33262,
+      "execution_price_paise": 33239,
+      "reference_notional_paise": 798288
+    },
+    {
+      "line": 53,
+      "order_id": "BUY000025",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8072,
+      "execution_price_paise": 8048,
+      "reference_notional_paise": 201800
+    },
+    {
+      "line": 54,
+      "order_id": "SELL000025",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8072,
+      "execution_price_paise": 8048,
+      "reference_notional_paise": 201800
+    },
+    {
+      "line": 55,
+      "order_id": "REJ000005",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 56,
+      "order_id": "BUY000026",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10015,
+      "execution_price_paise": 9990,
+      "reference_notional_paise": 260390
+    },
+    {
+      "line": 57,
+      "order_id": "SELL000026",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10015,
+      "execution_price_paise": 9990,
+      "reference_notional_paise": 260390
+    },
+    {
+      "line": 58,
+      "order_id": "BUY000027",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20535,
+      "execution_price_paise": 20509,
+      "reference_notional_paise": 554445
+    },
+    {
+      "line": 59,
+      "order_id": "SELL000027",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20535,
+      "execution_price_paise": 20509,
+      "reference_notional_paise": 554445
+    },
+    {
+      "line": 60,
+      "order_id": "BUY000028",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12080,
+      "execution_price_paise": 12060,
+      "reference_notional_paise": 338240
+    },
+    {
+      "line": 61,
+      "order_id": "SELL000028",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12080,
+      "execution_price_paise": 12060,
+      "reference_notional_paise": 338240
+    },
+    {
+      "line": 62,
+      "order_id": "BUY000029",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33245,
+      "execution_price_paise": 33224,
+      "reference_notional_paise": 964105
+    },
+    {
+      "line": 63,
+      "order_id": "SELL000029",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33245,
+      "execution_price_paise": 33224,
+      "reference_notional_paise": 964105
+    },
+    {
+      "line": 64,
+      "order_id": "BUY000030",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8045,
+      "execution_price_paise": 8023,
+      "reference_notional_paise": 241350
+    },
+    {
+      "line": 65,
+      "order_id": "SELL000030",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8045,
+      "execution_price_paise": 8023,
+      "reference_notional_paise": 241350
+    },
+    {
+      "line": 66,
+      "order_id": "BUY000030",
+      "status": "REJECTED",
+      "reason_code": "DUP001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 67,
+      "order_id": "BUY000031",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10060,
+      "execution_price_paise": 10037,
+      "reference_notional_paise": 311860
+    },
+    {
+      "line": 68,
+      "order_id": "SELL000031",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10060,
+      "execution_price_paise": 10037,
+      "reference_notional_paise": 311860
+    },
+    {
+      "line": 69,
+      "order_id": "BUY000032",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20584,
+      "execution_price_paise": 20560,
+      "reference_notional_paise": 658688
+    },
+    {
+      "line": 70,
+      "order_id": "SELL000032",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20584,
+      "execution_price_paise": 20560,
+      "reference_notional_paise": 658688
+    },
+    {
+      "line": 71,
+      "order_id": "BUY000033",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12123,
+      "execution_price_paise": 12098,
+      "reference_notional_paise": 400059
+    },
+    {
+      "line": 72,
+      "order_id": "SELL000033",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12123,
+      "execution_price_paise": 12098,
+      "reference_notional_paise": 400059
+    },
+    {
+      "line": 73,
+      "order_id": "BUY000034",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33296,
+      "execution_price_paise": 33270,
+      "reference_notional_paise": 1132064
+    },
+    {
+      "line": 74,
+      "order_id": "SELL000034",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33296,
+      "execution_price_paise": 33270,
+      "reference_notional_paise": 1132064
+    },
+    {
+      "line": 75,
+      "order_id": "BUY000035",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8086,
+      "execution_price_paise": 8066,
+      "reference_notional_paise": 283010
+    },
+    {
+      "line": 76,
+      "order_id": "SELL000035",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8086,
+      "execution_price_paise": 8066,
+      "reference_notional_paise": 283010
+    },
+    {
+      "line": 77,
+      "order_id": "REJ000007",
+      "status": "REJECTED",
+      "reason_code": "HOLD01",
+      "reference_price_paise": 20584,
+      "execution_price_paise": null,
+      "reference_notional_paise": 20583979416
+    },
+    {
+      "line": 78,
+      "order_id": "BUY000036",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10049,
+      "execution_price_paise": 10028,
+      "reference_notional_paise": 361764
+    },
+    {
+      "line": 79,
+      "order_id": "SELL000036",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10049,
+      "execution_price_paise": 10028,
+      "reference_notional_paise": 361764
+    },
+    {
+      "line": 80,
+      "order_id": "BUY000037",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20577,
+      "execution_price_paise": 20555,
+      "reference_notional_paise": 761349
+    },
+    {
+      "line": 81,
+      "order_id": "SELL000037",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20577,
+      "execution_price_paise": 20555,
+      "reference_notional_paise": 761349
+    },
+    {
+      "line": 82,
+      "order_id": "BUY000038",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12110,
+      "execution_price_paise": 12087,
+      "reference_notional_paise": 460180
+    },
+    {
+      "line": 83,
+      "order_id": "SELL000038",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12110,
+      "execution_price_paise": 12087,
+      "reference_notional_paise": 460180
+    },
+    {
+      "line": 84,
+      "order_id": "BUY000039",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33291,
+      "execution_price_paise": 33267,
+      "reference_notional_paise": 1298349
+    },
+    {
+      "line": 85,
+      "order_id": "SELL000039",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33291,
+      "execution_price_paise": 33267,
+      "reference_notional_paise": 1298349
+    },
+    {
+      "line": 86,
+      "order_id": "BUY000040",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8071,
+      "execution_price_paise": 8046,
+      "reference_notional_paise": 322840
+    },
+    {
+      "line": 87,
+      "order_id": "SELL000040",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8071,
+      "execution_price_paise": 8046,
+      "reference_notional_paise": 322840
+    },
+    {
+      "line": 88,
+      "order_id": "REJ000008",
+      "status": "REJECTED",
+      "reason_code": "PRICE01",
+      "reference_price_paise": 12110,
+      "execution_price_paise": null,
+      "reference_notional_paise": 12110
+    },
+    {
+      "line": 89,
+      "order_id": "BUY000041",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10082,
+      "execution_price_paise": 10056,
+      "reference_notional_paise": 413362
+    },
+    {
+      "line": 90,
+      "order_id": "SELL000041",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10082,
+      "execution_price_paise": 10056,
+      "reference_notional_paise": 413362
+    },
+    {
+      "line": 91,
+      "order_id": "BUY000042",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20614,
+      "execution_price_paise": 20594,
+      "reference_notional_paise": 865788
+    },
+    {
+      "line": 92,
+      "order_id": "SELL000042",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20614,
+      "execution_price_paise": 20594,
+      "reference_notional_paise": 865788
+    },
+    {
+      "line": 93,
+      "order_id": "BUY000043",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12141,
+      "execution_price_paise": 12120,
+      "reference_notional_paise": 522063
+    },
+    {
+      "line": 94,
+      "order_id": "SELL000043",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12141,
+      "execution_price_paise": 12120,
+      "reference_notional_paise": 522063
+    },
+    {
+      "line": 95,
+      "order_id": "BUY000044",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33330,
+      "execution_price_paise": 33308,
+      "reference_notional_paise": 1466520
+    },
+    {
+      "line": 96,
+      "order_id": "SELL000044",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33330,
+      "execution_price_paise": 33308,
+      "reference_notional_paise": 1466520
+    },
+    {
+      "line": 97,
+      "order_id": "BUY000045",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8100,
+      "execution_price_paise": 8077,
+      "reference_notional_paise": 364500
+    },
+    {
+      "line": 98,
+      "order_id": "SELL000045",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8100,
+      "execution_price_paise": 8077,
+      "reference_notional_paise": 364500
+    },
+    {
+      "line": 99,
+      "order_id": "REJ000009",
+      "status": "REJECTED",
+      "reason_code": "SIDE001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 100,
+      "order_id": "BUY000046",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10049,
+      "execution_price_paise": 10025,
+      "reference_notional_paise": 462254
+    },
+    {
+      "line": 101,
+      "order_id": "SELL000046",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10049,
+      "execution_price_paise": 10025,
+      "reference_notional_paise": 462254
+    },
+    {
+      "line": 102,
+      "order_id": "BUY000047",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20585,
+      "execution_price_paise": 20560,
+      "reference_notional_paise": 967495
+    },
+    {
+      "line": 103,
+      "order_id": "SELL000047",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20585,
+      "execution_price_paise": 20560,
+      "reference_notional_paise": 967495
+    },
+    {
+      "line": 104,
+      "order_id": "BUY000048",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12106,
+      "execution_price_paise": 12080,
+      "reference_notional_paise": 581088
+    },
+    {
+      "line": 105,
+      "order_id": "SELL000048",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12106,
+      "execution_price_paise": 12080,
+      "reference_notional_paise": 581088
+    },
+    {
+      "line": 106,
+      "order_id": "BUY000049",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33303,
+      "execution_price_paise": 33283,
+      "reference_notional_paise": 1631847
+    },
+    {
+      "line": 107,
+      "order_id": "SELL000049",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33303,
+      "execution_price_paise": 33283,
+      "reference_notional_paise": 1631847
+    },
+    {
+      "line": 108,
+      "order_id": "BUY000050",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8063,
+      "execution_price_paise": 8042,
+      "reference_notional_paise": 403150
+    },
+    {
+      "line": 109,
+      "order_id": "SELL000050",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8063,
+      "execution_price_paise": 8042,
+      "reference_notional_paise": 403150
+    },
+    {
+      "line": 110,
+      "order_id": "REJ000010",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 111,
+      "order_id": "BUY000051",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10108,
+      "execution_price_paise": 10086,
+      "reference_notional_paise": 515508
+    },
+    {
+      "line": 112,
+      "order_id": "SELL000051",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10108,
+      "execution_price_paise": 10086,
+      "reference_notional_paise": 515508
+    },
+    {
+      "line": 113,
+      "order_id": "BUY000052",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20648,
+      "execution_price_paise": 20625,
+      "reference_notional_paise": 1073696
+    },
+    {
+      "line": 114,
+      "order_id": "SELL000052",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20648,
+      "execution_price_paise": 20625,
+      "reference_notional_paise": 1073696
+    },
+    {
+      "line": 115,
+      "order_id": "BUY000053",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12163,
+      "execution_price_paise": 12139,
+      "reference_notional_paise": 644639
+    },
+    {
+      "line": 116,
+      "order_id": "SELL000053",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12163,
+      "execution_price_paise": 12139,
+      "reference_notional_paise": 644639
+    },
+    {
+      "line": 117,
+      "order_id": "BUY000054",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33368,
+      "execution_price_paise": 33343,
+      "reference_notional_paise": 1801872
+    },
+    {
+      "line": 118,
+      "order_id": "SELL000054",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33368,
+      "execution_price_paise": 33343,
+      "reference_notional_paise": 1801872
+    },
+    {
+      "line": 119,
+      "order_id": "BUY000055",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8118,
+      "execution_price_paise": 8092,
+      "reference_notional_paise": 446490
+    },
+    {
+      "line": 120,
+      "order_id": "SELL000055",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8118,
+      "execution_price_paise": 8092,
+      "reference_notional_paise": 446490
+    },
+    {
+      "line": 121,
+      "order_id": "BUY000055",
+      "status": "REJECTED",
+      "reason_code": "DUP001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 122,
+      "order_id": "BUY000056",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10087,
+      "execution_price_paise": 10067,
+      "reference_notional_paise": 564872
+    },
+    {
+      "line": 123,
+      "order_id": "SELL000056",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10087,
+      "execution_price_paise": 10067,
+      "reference_notional_paise": 564872
+    },
+    {
+      "line": 124,
+      "order_id": "BUY000057",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20631,
+      "execution_price_paise": 20610,
+      "reference_notional_paise": 1175967
+    },
+    {
+      "line": 125,
+      "order_id": "SELL000057",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20631,
+      "execution_price_paise": 20610,
+      "reference_notional_paise": 1175967
+    },
+    {
+      "line": 126,
+      "order_id": "BUY000058",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12140,
+      "execution_price_paise": 12118,
+      "reference_notional_paise": 704120
+    },
+    {
+      "line": 127,
+      "order_id": "SELL000058",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12140,
+      "execution_price_paise": 12118,
+      "reference_notional_paise": 704120
+    },
+    {
+      "line": 128,
+      "order_id": "BUY000059",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33353,
+      "execution_price_paise": 33330,
+      "reference_notional_paise": 1967827
+    },
+    {
+      "line": 129,
+      "order_id": "SELL000059",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33353,
+      "execution_price_paise": 33330,
+      "reference_notional_paise": 1967827
+    },
+    {
+      "line": 130,
+      "order_id": "BUY000060",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8093,
+      "execution_price_paise": 8069,
+      "reference_notional_paise": 485580
+    },
+    {
+      "line": 131,
+      "order_id": "SELL000060",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8093,
+      "execution_price_paise": 8069,
+      "reference_notional_paise": 485580
+    },
+    {
+      "line": 132,
+      "order_id": "REJ000012",
+      "status": "REJECTED",
+      "reason_code": "HOLD01",
+      "reference_price_paise": 20631,
+      "execution_price_paise": null,
+      "reference_notional_paise": 20630979369
+    },
+    {
+      "line": 133,
+      "order_id": "BUY000061",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10064,
+      "execution_price_paise": 10039,
+      "reference_notional_paise": 613904
+    },
+    {
+      "line": 134,
+      "order_id": "SELL000061",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10064,
+      "execution_price_paise": 10039,
+      "reference_notional_paise": 613904
+    },
+    {
+      "line": 135,
+      "order_id": "BUY000062",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20612,
+      "execution_price_paise": 20586,
+      "reference_notional_paise": 1277944
+    },
+    {
+      "line": 136,
+      "order_id": "SELL000062",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20612,
+      "execution_price_paise": 20586,
+      "reference_notional_paise": 1277944
+    },
+    {
+      "line": 137,
+      "order_id": "BUY000063",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12115,
+      "execution_price_paise": 12095,
+      "reference_notional_paise": 763245
+    },
+    {
+      "line": 138,
+      "order_id": "SELL000063",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12115,
+      "execution_price_paise": 12095,
+      "reference_notional_paise": 763245
+    },
+    {
+      "line": 139,
+      "order_id": "BUY000064",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33336,
+      "execution_price_paise": 33315,
+      "reference_notional_paise": 2133504
+    },
+    {
+      "line": 140,
+      "order_id": "SELL000064",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33336,
+      "execution_price_paise": 33315,
+      "reference_notional_paise": 2133504
+    },
+    {
+      "line": 141,
+      "order_id": "BUY000065",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8066,
+      "execution_price_paise": 8044,
+      "reference_notional_paise": 524290
+    },
+    {
+      "line": 142,
+      "order_id": "SELL000065",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8066,
+      "execution_price_paise": 8044,
+      "reference_notional_paise": 524290
+    },
+    {
+      "line": 143,
+      "order_id": "REJ000013",
+      "status": "REJECTED",
+      "reason_code": "PRICE01",
+      "reference_price_paise": 12115,
+      "execution_price_paise": null,
+      "reference_notional_paise": 12115
+    },
+    {
+      "line": 144,
+      "order_id": "BUY000066",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10109,
+      "execution_price_paise": 10086,
+      "reference_notional_paise": 667194
+    },
+    {
+      "line": 145,
+      "order_id": "SELL000066",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10109,
+      "execution_price_paise": 10086,
+      "reference_notional_paise": 667194
+    },
+    {
+      "line": 146,
+      "order_id": "BUY000067",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20661,
+      "execution_price_paise": 20637,
+      "reference_notional_paise": 1384287
+    },
+    {
+      "line": 147,
+      "order_id": "SELL000067",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20661,
+      "execution_price_paise": 20637,
+      "reference_notional_paise": 1384287
+    },
+    {
+      "line": 148,
+      "order_id": "BUY000068",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12158,
+      "execution_price_paise": 12133,
+      "reference_notional_paise": 826744
+    },
+    {
+      "line": 149,
+      "order_id": "SELL000068",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12158,
+      "execution_price_paise": 12133,
+      "reference_notional_paise": 826744
+    },
+    {
+      "line": 150,
+      "order_id": "BUY000069",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33387,
+      "execution_price_paise": 33361,
+      "reference_notional_paise": 2303703
+    },
+    {
+      "line": 151,
+      "order_id": "SELL000069",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33387,
+      "execution_price_paise": 33361,
+      "reference_notional_paise": 2303703
+    },
+    {
+      "line": 152,
+      "order_id": "BUY000070",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8107,
+      "execution_price_paise": 8087,
+      "reference_notional_paise": 567490
+    },
+    {
+      "line": 153,
+      "order_id": "SELL000070",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8107,
+      "execution_price_paise": 8087,
+      "reference_notional_paise": 567490
+    },
+    {
+      "line": 154,
+      "order_id": "REJ000014",
+      "status": "REJECTED",
+      "reason_code": "SIDE001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 155,
+      "order_id": "BUY000071",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10098,
+      "execution_price_paise": 10077,
+      "reference_notional_paise": 716958
+    },
+    {
+      "line": 156,
+      "order_id": "SELL000071",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10098,
+      "execution_price_paise": 10077,
+      "reference_notional_paise": 716958
+    },
+    {
+      "line": 157,
+      "order_id": "BUY000072",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20654,
+      "execution_price_paise": 20632,
+      "reference_notional_paise": 1487088
+    },
+    {
+      "line": 158,
+      "order_id": "SELL000072",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20654,
+      "execution_price_paise": 20632,
+      "reference_notional_paise": 1487088
+    },
+    {
+      "line": 159,
+      "order_id": "BUY000073",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12145,
+      "execution_price_paise": 12122,
+      "reference_notional_paise": 886585
+    },
+    {
+      "line": 160,
+      "order_id": "SELL000073",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12145,
+      "execution_price_paise": 12122,
+      "reference_notional_paise": 886585
+    },
+    {
+      "line": 161,
+      "order_id": "BUY000074",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33382,
+      "execution_price_paise": 33358,
+      "reference_notional_paise": 2470268
+    },
+    {
+      "line": 162,
+      "order_id": "SELL000074",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33382,
+      "execution_price_paise": 33358,
+      "reference_notional_paise": 2470268
+    },
+    {
+      "line": 163,
+      "order_id": "BUY000075",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8092,
+      "execution_price_paise": 8067,
+      "reference_notional_paise": 606900
+    },
+    {
+      "line": 164,
+      "order_id": "SELL000075",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8092,
+      "execution_price_paise": 8067,
+      "reference_notional_paise": 606900
+    },
+    {
+      "line": 165,
+      "order_id": "REJ000015",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 166,
+      "order_id": "BUY000076",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10131,
+      "execution_price_paise": 10105,
+      "reference_notional_paise": 769956
+    },
+    {
+      "line": 167,
+      "order_id": "SELL000076",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10131,
+      "execution_price_paise": 10105,
+      "reference_notional_paise": 769956
+    },
+    {
+      "line": 168,
+      "order_id": "BUY000077",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20691,
+      "execution_price_paise": 20671,
+      "reference_notional_paise": 1593207
+    },
+    {
+      "line": 169,
+      "order_id": "SELL000077",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20691,
+      "execution_price_paise": 20671,
+      "reference_notional_paise": 1593207
+    },
+    {
+      "line": 170,
+      "order_id": "BUY000078",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12176,
+      "execution_price_paise": 12155,
+      "reference_notional_paise": 949728
+    },
+    {
+      "line": 171,
+      "order_id": "SELL000078",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12176,
+      "execution_price_paise": 12155,
+      "reference_notional_paise": 949728
+    },
+    {
+      "line": 172,
+      "order_id": "BUY000079",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33421,
+      "execution_price_paise": 33399,
+      "reference_notional_paise": 2640259
+    },
+    {
+      "line": 173,
+      "order_id": "SELL000079",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33421,
+      "execution_price_paise": 33399,
+      "reference_notional_paise": 2640259
+    },
+    {
+      "line": 174,
+      "order_id": "BUY000080",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8121,
+      "execution_price_paise": 8098,
+      "reference_notional_paise": 649680
+    },
+    {
+      "line": 175,
+      "order_id": "SELL000080",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8121,
+      "execution_price_paise": 8098,
+      "reference_notional_paise": 649680
+    },
+    {
+      "line": 176,
+      "order_id": "BUY000080",
+      "status": "REJECTED",
+      "reason_code": "DUP001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 177,
+      "order_id": "BUY000081",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10098,
+      "execution_price_paise": 10074,
+      "reference_notional_paise": 817938
+    },
+    {
+      "line": 178,
+      "order_id": "SELL000081",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10098,
+      "execution_price_paise": 10074,
+      "reference_notional_paise": 817938
+    },
+    {
+      "line": 179,
+      "order_id": "BUY000082",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20662,
+      "execution_price_paise": 20637,
+      "reference_notional_paise": 1694284
+    },
+    {
+      "line": 180,
+      "order_id": "SELL000082",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20662,
+      "execution_price_paise": 20637,
+      "reference_notional_paise": 1694284
+    },
+    {
+      "line": 181,
+      "order_id": "BUY000083",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12141,
+      "execution_price_paise": 12115,
+      "reference_notional_paise": 1007703
+    },
+    {
+      "line": 182,
+      "order_id": "SELL000083",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12141,
+      "execution_price_paise": 12115,
+      "reference_notional_paise": 1007703
+    },
+    {
+      "line": 183,
+      "order_id": "BUY000084",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33394,
+      "execution_price_paise": 33374,
+      "reference_notional_paise": 2805096
+    },
+    {
+      "line": 184,
+      "order_id": "SELL000084",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33394,
+      "execution_price_paise": 33374,
+      "reference_notional_paise": 2805096
+    },
+    {
+      "line": 185,
+      "order_id": "BUY000085",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8084,
+      "execution_price_paise": 8063,
+      "reference_notional_paise": 687140
+    },
+    {
+      "line": 186,
+      "order_id": "SELL000085",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8084,
+      "execution_price_paise": 8063,
+      "reference_notional_paise": 687140
+    },
+    {
+      "line": 187,
+      "order_id": "REJ000017",
+      "status": "REJECTED",
+      "reason_code": "HOLD01",
+      "reference_price_paise": 20662,
+      "execution_price_paise": null,
+      "reference_notional_paise": 20661979338
+    },
+    {
+      "line": 188,
+      "order_id": "BUY000086",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10157,
+      "execution_price_paise": 10135,
+      "reference_notional_paise": 873502
+    },
+    {
+      "line": 189,
+      "order_id": "SELL000086",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10157,
+      "execution_price_paise": 10135,
+      "reference_notional_paise": 873502
+    },
+    {
+      "line": 190,
+      "order_id": "BUY000087",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20725,
+      "execution_price_paise": 20702,
+      "reference_notional_paise": 1803075
+    },
+    {
+      "line": 191,
+      "order_id": "SELL000087",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20725,
+      "execution_price_paise": 20702,
+      "reference_notional_paise": 1803075
+    },
+    {
+      "line": 192,
+      "order_id": "BUY000088",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12198,
+      "execution_price_paise": 12174,
+      "reference_notional_paise": 1073424
+    },
+    {
+      "line": 193,
+      "order_id": "SELL000088",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12198,
+      "execution_price_paise": 12174,
+      "reference_notional_paise": 1073424
+    },
+    {
+      "line": 194,
+      "order_id": "BUY000089",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33459,
+      "execution_price_paise": 33434,
+      "reference_notional_paise": 2977851
+    },
+    {
+      "line": 195,
+      "order_id": "SELL000089",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33459,
+      "execution_price_paise": 33434,
+      "reference_notional_paise": 2977851
+    },
+    {
+      "line": 196,
+      "order_id": "BUY000090",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8139,
+      "execution_price_paise": 8113,
+      "reference_notional_paise": 732510
+    },
+    {
+      "line": 197,
+      "order_id": "SELL000090",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8139,
+      "execution_price_paise": 8113,
+      "reference_notional_paise": 732510
+    },
+    {
+      "line": 198,
+      "order_id": "REJ000018",
+      "status": "REJECTED",
+      "reason_code": "PRICE01",
+      "reference_price_paise": 12198,
+      "execution_price_paise": null,
+      "reference_notional_paise": 12198
+    },
+    {
+      "line": 199,
+      "order_id": "BUY000091",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10136,
+      "execution_price_paise": 10116,
+      "reference_notional_paise": 922376
+    },
+    {
+      "line": 200,
+      "order_id": "SELL000091",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10136,
+      "execution_price_paise": 10116,
+      "reference_notional_paise": 922376
+    },
+    {
+      "line": 201,
+      "order_id": "BUY000092",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20708,
+      "execution_price_paise": 20687,
+      "reference_notional_paise": 1905136
+    },
+    {
+      "line": 202,
+      "order_id": "SELL000092",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20708,
+      "execution_price_paise": 20687,
+      "reference_notional_paise": 1905136
+    },
+    {
+      "line": 203,
+      "order_id": "BUY000093",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12175,
+      "execution_price_paise": 12153,
+      "reference_notional_paise": 1132275
+    },
+    {
+      "line": 204,
+      "order_id": "SELL000093",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12175,
+      "execution_price_paise": 12153,
+      "reference_notional_paise": 1132275
+    },
+    {
+      "line": 205,
+      "order_id": "BUY000094",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33444,
+      "execution_price_paise": 33421,
+      "reference_notional_paise": 3143736
+    },
+    {
+      "line": 206,
+      "order_id": "SELL000094",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33444,
+      "execution_price_paise": 33421,
+      "reference_notional_paise": 3143736
+    },
+    {
+      "line": 207,
+      "order_id": "BUY000095",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8114,
+      "execution_price_paise": 8090,
+      "reference_notional_paise": 770830
+    },
+    {
+      "line": 208,
+      "order_id": "SELL000095",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8114,
+      "execution_price_paise": 8090,
+      "reference_notional_paise": 770830
+    },
+    {
+      "line": 209,
+      "order_id": "REJ000019",
+      "status": "REJECTED",
+      "reason_code": "SIDE001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 210,
+      "order_id": "BUY000096",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10113,
+      "execution_price_paise": 10088,
+      "reference_notional_paise": 970848
+    },
+    {
+      "line": 211,
+      "order_id": "SELL000096",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10113,
+      "execution_price_paise": 10088,
+      "reference_notional_paise": 970848
+    },
+    {
+      "line": 212,
+      "order_id": "BUY000097",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20689,
+      "execution_price_paise": 20663,
+      "reference_notional_paise": 2006833
+    },
+    {
+      "line": 213,
+      "order_id": "SELL000097",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20689,
+      "execution_price_paise": 20663,
+      "reference_notional_paise": 2006833
+    },
+    {
+      "line": 214,
+      "order_id": "BUY000098",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12150,
+      "execution_price_paise": 12130,
+      "reference_notional_paise": 1190700
+    },
+    {
+      "line": 215,
+      "order_id": "SELL000098",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12150,
+      "execution_price_paise": 12130,
+      "reference_notional_paise": 1190700
+    },
+    {
+      "line": 216,
+      "order_id": "BUY000099",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33427,
+      "execution_price_paise": 33406,
+      "reference_notional_paise": 3309273
+    },
+    {
+      "line": 217,
+      "order_id": "SELL000099",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33427,
+      "execution_price_paise": 33406,
+      "reference_notional_paise": 3309273
+    },
+    {
+      "line": 218,
+      "order_id": "BUY000100",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8087,
+      "execution_price_paise": 8065,
+      "reference_notional_paise": 808700
+    },
+    {
+      "line": 219,
+      "order_id": "SELL000100",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8087,
+      "execution_price_paise": 8065,
+      "reference_notional_paise": 808700
+    },
+    {
+      "line": 220,
+      "order_id": "REJ000020",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 221,
+      "order_id": "BUY000101",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10158,
+      "execution_price_paise": 10135,
+      "reference_notional_paise": 1025958
+    },
+    {
+      "line": 222,
+      "order_id": "SELL000101",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10158,
+      "execution_price_paise": 10135,
+      "reference_notional_paise": 1025958
+    },
+    {
+      "line": 223,
+      "order_id": "BUY000102",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20738,
+      "execution_price_paise": 20714,
+      "reference_notional_paise": 2115276
+    },
+    {
+      "line": 224,
+      "order_id": "SELL000102",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20738,
+      "execution_price_paise": 20714,
+      "reference_notional_paise": 2115276
+    },
+    {
+      "line": 225,
+      "order_id": "BUY000103",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12193,
+      "execution_price_paise": 12168,
+      "reference_notional_paise": 1255879
+    },
+    {
+      "line": 226,
+      "order_id": "SELL000103",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12193,
+      "execution_price_paise": 12168,
+      "reference_notional_paise": 1255879
+    },
+    {
+      "line": 227,
+      "order_id": "BUY000104",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33478,
+      "execution_price_paise": 33452,
+      "reference_notional_paise": 3481712
+    },
+    {
+      "line": 228,
+      "order_id": "SELL000104",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33478,
+      "execution_price_paise": 33452,
+      "reference_notional_paise": 3481712
+    },
+    {
+      "line": 229,
+      "order_id": "BUY000105",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8128,
+      "execution_price_paise": 8108,
+      "reference_notional_paise": 853440
+    },
+    {
+      "line": 230,
+      "order_id": "SELL000105",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8128,
+      "execution_price_paise": 8108,
+      "reference_notional_paise": 853440
+    },
+    {
+      "line": 231,
+      "order_id": "BUY000105",
+      "status": "REJECTED",
+      "reason_code": "DUP001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 232,
+      "order_id": "BUY000106",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10147,
+      "execution_price_paise": 10126,
+      "reference_notional_paise": 1075582
+    },
+    {
+      "line": 233,
+      "order_id": "SELL000106",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10147,
+      "execution_price_paise": 10126,
+      "reference_notional_paise": 1075582
+    },
+    {
+      "line": 234,
+      "order_id": "BUY000107",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20731,
+      "execution_price_paise": 20709,
+      "reference_notional_paise": 2218217
+    },
+    {
+      "line": 235,
+      "order_id": "SELL000107",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20731,
+      "execution_price_paise": 20709,
+      "reference_notional_paise": 2218217
+    },
+    {
+      "line": 236,
+      "order_id": "BUY000108",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12180,
+      "execution_price_paise": 12157,
+      "reference_notional_paise": 1315440
+    },
+    {
+      "line": 237,
+      "order_id": "SELL000108",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12180,
+      "execution_price_paise": 12157,
+      "reference_notional_paise": 1315440
+    },
+    {
+      "line": 238,
+      "order_id": "BUY000109",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33473,
+      "execution_price_paise": 33449,
+      "reference_notional_paise": 3648557
+    },
+    {
+      "line": 239,
+      "order_id": "SELL000109",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33473,
+      "execution_price_paise": 33449,
+      "reference_notional_paise": 3648557
+    },
+    {
+      "line": 240,
+      "order_id": "BUY000110",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8113,
+      "execution_price_paise": 8088,
+      "reference_notional_paise": 892430
+    },
+    {
+      "line": 241,
+      "order_id": "SELL000110",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8113,
+      "execution_price_paise": 8088,
+      "reference_notional_paise": 892430
+    },
+    {
+      "line": 242,
+      "order_id": "REJ000022",
+      "status": "REJECTED",
+      "reason_code": "HOLD01",
+      "reference_price_paise": 20731,
+      "execution_price_paise": null,
+      "reference_notional_paise": 20730979269
+    },
+    {
+      "line": 243,
+      "order_id": "BUY000111",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10180,
+      "execution_price_paise": 10154,
+      "reference_notional_paise": 1129980
+    },
+    {
+      "line": 244,
+      "order_id": "SELL000111",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10180,
+      "execution_price_paise": 10154,
+      "reference_notional_paise": 1129980
+    },
+    {
+      "line": 245,
+      "order_id": "BUY000112",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20768,
+      "execution_price_paise": 20748,
+      "reference_notional_paise": 2326016
+    },
+    {
+      "line": 246,
+      "order_id": "SELL000112",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20768,
+      "execution_price_paise": 20748,
+      "reference_notional_paise": 2326016
+    },
+    {
+      "line": 247,
+      "order_id": "BUY000113",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12211,
+      "execution_price_paise": 12190,
+      "reference_notional_paise": 1379843
+    },
+    {
+      "line": 248,
+      "order_id": "SELL000113",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12211,
+      "execution_price_paise": 12190,
+      "reference_notional_paise": 1379843
+    },
+    {
+      "line": 249,
+      "order_id": "BUY000114",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33512,
+      "execution_price_paise": 33490,
+      "reference_notional_paise": 3820368
+    },
+    {
+      "line": 250,
+      "order_id": "SELL000114",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33512,
+      "execution_price_paise": 33490,
+      "reference_notional_paise": 3820368
+    },
+    {
+      "line": 251,
+      "order_id": "BUY000115",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8142,
+      "execution_price_paise": 8119,
+      "reference_notional_paise": 936330
+    },
+    {
+      "line": 252,
+      "order_id": "SELL000115",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8142,
+      "execution_price_paise": 8119,
+      "reference_notional_paise": 936330
+    },
+    {
+      "line": 253,
+      "order_id": "REJ000023",
+      "status": "REJECTED",
+      "reason_code": "PRICE01",
+      "reference_price_paise": 12211,
+      "execution_price_paise": null,
+      "reference_notional_paise": 12211
+    },
+    {
+      "line": 254,
+      "order_id": "BUY000116",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10147,
+      "execution_price_paise": 10123,
+      "reference_notional_paise": 1177052
+    },
+    {
+      "line": 255,
+      "order_id": "SELL000116",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10147,
+      "execution_price_paise": 10123,
+      "reference_notional_paise": 1177052
+    },
+    {
+      "line": 256,
+      "order_id": "BUY000117",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20739,
+      "execution_price_paise": 20714,
+      "reference_notional_paise": 2426463
+    },
+    {
+      "line": 257,
+      "order_id": "SELL000117",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20739,
+      "execution_price_paise": 20714,
+      "reference_notional_paise": 2426463
+    },
+    {
+      "line": 258,
+      "order_id": "BUY000118",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12176,
+      "execution_price_paise": 12150,
+      "reference_notional_paise": 1436768
+    },
+    {
+      "line": 259,
+      "order_id": "SELL000118",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12176,
+      "execution_price_paise": 12150,
+      "reference_notional_paise": 1436768
+    },
+    {
+      "line": 260,
+      "order_id": "BUY000119",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33485,
+      "execution_price_paise": 33465,
+      "reference_notional_paise": 3984715
+    },
+    {
+      "line": 261,
+      "order_id": "SELL000119",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33485,
+      "execution_price_paise": 33465,
+      "reference_notional_paise": 3984715
+    },
+    {
+      "line": 262,
+      "order_id": "BUY000120",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8105,
+      "execution_price_paise": 8084,
+      "reference_notional_paise": 972600
+    },
+    {
+      "line": 263,
+      "order_id": "SELL000120",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8105,
+      "execution_price_paise": 8084,
+      "reference_notional_paise": 972600
+    },
+    {
+      "line": 264,
+      "order_id": "REJ000024",
+      "status": "REJECTED",
+      "reason_code": "SIDE001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 265,
+      "order_id": "BUY000121",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10206,
+      "execution_price_paise": 10184,
+      "reference_notional_paise": 1234926
+    },
+    {
+      "line": 266,
+      "order_id": "SELL000121",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10206,
+      "execution_price_paise": 10184,
+      "reference_notional_paise": 1234926
+    },
+    {
+      "line": 267,
+      "order_id": "BUY000122",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20802,
+      "execution_price_paise": 20779,
+      "reference_notional_paise": 2537844
+    },
+    {
+      "line": 268,
+      "order_id": "SELL000122",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20802,
+      "execution_price_paise": 20779,
+      "reference_notional_paise": 2537844
+    },
+    {
+      "line": 269,
+      "order_id": "BUY000123",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12233,
+      "execution_price_paise": 12209,
+      "reference_notional_paise": 1504659
+    },
+    {
+      "line": 270,
+      "order_id": "SELL000123",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12233,
+      "execution_price_paise": 12209,
+      "reference_notional_paise": 1504659
+    },
+    {
+      "line": 271,
+      "order_id": "BUY000124",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33550,
+      "execution_price_paise": 33525,
+      "reference_notional_paise": 4160200
+    },
+    {
+      "line": 272,
+      "order_id": "SELL000124",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33550,
+      "execution_price_paise": 33525,
+      "reference_notional_paise": 4160200
+    },
+    {
+      "line": 273,
+      "order_id": "BUY000125",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8160,
+      "execution_price_paise": 8134,
+      "reference_notional_paise": 1020000
+    },
+    {
+      "line": 274,
+      "order_id": "SELL000125",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8160,
+      "execution_price_paise": 8134,
+      "reference_notional_paise": 1020000
+    },
+    {
+      "line": 275,
+      "order_id": "REJ000025",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 276,
+      "order_id": "BUY000126",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10185,
+      "execution_price_paise": 10165,
+      "reference_notional_paise": 1283310
+    },
+    {
+      "line": 277,
+      "order_id": "SELL000126",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10185,
+      "execution_price_paise": 10165,
+      "reference_notional_paise": 1283310
+    },
+    {
+      "line": 278,
+      "order_id": "BUY000127",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20785,
+      "execution_price_paise": 20764,
+      "reference_notional_paise": 2639695
+    },
+    {
+      "line": 279,
+      "order_id": "SELL000127",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20785,
+      "execution_price_paise": 20764,
+      "reference_notional_paise": 2639695
+    },
+    {
+      "line": 280,
+      "order_id": "BUY000128",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12210,
+      "execution_price_paise": 12188,
+      "reference_notional_paise": 1562880
+    },
+    {
+      "line": 281,
+      "order_id": "SELL000128",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12210,
+      "execution_price_paise": 12188,
+      "reference_notional_paise": 1562880
+    },
+    {
+      "line": 282,
+      "order_id": "BUY000129",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33535,
+      "execution_price_paise": 33512,
+      "reference_notional_paise": 4326015
+    },
+    {
+      "line": 283,
+      "order_id": "SELL000129",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33535,
+      "execution_price_paise": 33512,
+      "reference_notional_paise": 4326015
+    },
+    {
+      "line": 284,
+      "order_id": "BUY000130",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8135,
+      "execution_price_paise": 8111,
+      "reference_notional_paise": 1057550
+    },
+    {
+      "line": 285,
+      "order_id": "SELL000130",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8135,
+      "execution_price_paise": 8111,
+      "reference_notional_paise": 1057550
+    },
+    {
+      "line": 286,
+      "order_id": "BUY000130",
+      "status": "REJECTED",
+      "reason_code": "DUP001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 287,
+      "order_id": "BUY000131",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10162,
+      "execution_price_paise": 10137,
+      "reference_notional_paise": 1331222
+    },
+    {
+      "line": 288,
+      "order_id": "SELL000131",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10162,
+      "execution_price_paise": 10137,
+      "reference_notional_paise": 1331222
+    },
+    {
+      "line": 289,
+      "order_id": "BUY000132",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20766,
+      "execution_price_paise": 20740,
+      "reference_notional_paise": 2741112
+    },
+    {
+      "line": 290,
+      "order_id": "SELL000132",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20766,
+      "execution_price_paise": 20740,
+      "reference_notional_paise": 2741112
+    },
+    {
+      "line": 291,
+      "order_id": "BUY000133",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12185,
+      "execution_price_paise": 12165,
+      "reference_notional_paise": 1620605
+    },
+    {
+      "line": 292,
+      "order_id": "SELL000133",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12185,
+      "execution_price_paise": 12165,
+      "reference_notional_paise": 1620605
+    },
+    {
+      "line": 293,
+      "order_id": "BUY000134",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33518,
+      "execution_price_paise": 33497,
+      "reference_notional_paise": 4491412
+    },
+    {
+      "line": 294,
+      "order_id": "SELL000134",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33518,
+      "execution_price_paise": 33497,
+      "reference_notional_paise": 4491412
+    },
+    {
+      "line": 295,
+      "order_id": "BUY000135",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8108,
+      "execution_price_paise": 8086,
+      "reference_notional_paise": 1094580
+    },
+    {
+      "line": 296,
+      "order_id": "SELL000135",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8108,
+      "execution_price_paise": 8086,
+      "reference_notional_paise": 1094580
+    },
+    {
+      "line": 297,
+      "order_id": "REJ000027",
+      "status": "REJECTED",
+      "reason_code": "HOLD01",
+      "reference_price_paise": 20766,
+      "execution_price_paise": null,
+      "reference_notional_paise": 20765979234
+    },
+    {
+      "line": 298,
+      "order_id": "BUY000136",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10207,
+      "execution_price_paise": 10184,
+      "reference_notional_paise": 1388152
+    },
+    {
+      "line": 299,
+      "order_id": "SELL000136",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10207,
+      "execution_price_paise": 10184,
+      "reference_notional_paise": 1388152
+    },
+    {
+      "line": 300,
+      "order_id": "BUY000137",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20815,
+      "execution_price_paise": 20791,
+      "reference_notional_paise": 2851655
+    },
+    {
+      "line": 301,
+      "order_id": "SELL000137",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20815,
+      "execution_price_paise": 20791,
+      "reference_notional_paise": 2851655
+    },
+    {
+      "line": 302,
+      "order_id": "BUY000138",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12228,
+      "execution_price_paise": 12203,
+      "reference_notional_paise": 1687464
+    },
+    {
+      "line": 303,
+      "order_id": "SELL000138",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12228,
+      "execution_price_paise": 12203,
+      "reference_notional_paise": 1687464
+    },
+    {
+      "line": 304,
+      "order_id": "BUY000139",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33569,
+      "execution_price_paise": 33543,
+      "reference_notional_paise": 4666091
+    },
+    {
+      "line": 305,
+      "order_id": "SELL000139",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33569,
+      "execution_price_paise": 33543,
+      "reference_notional_paise": 4666091
+    },
+    {
+      "line": 306,
+      "order_id": "BUY000140",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8149,
+      "execution_price_paise": 8129,
+      "reference_notional_paise": 1140860
+    },
+    {
+      "line": 307,
+      "order_id": "SELL000140",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8149,
+      "execution_price_paise": 8129,
+      "reference_notional_paise": 1140860
+    },
+    {
+      "line": 308,
+      "order_id": "REJ000028",
+      "status": "REJECTED",
+      "reason_code": "PRICE01",
+      "reference_price_paise": 12228,
+      "execution_price_paise": null,
+      "reference_notional_paise": 12228
+    },
+    {
+      "line": 309,
+      "order_id": "BUY000141",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10196,
+      "execution_price_paise": 10175,
+      "reference_notional_paise": 1437636
+    },
+    {
+      "line": 310,
+      "order_id": "SELL000141",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10196,
+      "execution_price_paise": 10175,
+      "reference_notional_paise": 1437636
+    },
+    {
+      "line": 311,
+      "order_id": "BUY000142",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20808,
+      "execution_price_paise": 20786,
+      "reference_notional_paise": 2954736
+    },
+    {
+      "line": 312,
+      "order_id": "SELL000142",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20808,
+      "execution_price_paise": 20786,
+      "reference_notional_paise": 2954736
+    },
+    {
+      "line": 313,
+      "order_id": "BUY000143",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12215,
+      "execution_price_paise": 12192,
+      "reference_notional_paise": 1746745
+    },
+    {
+      "line": 314,
+      "order_id": "SELL000143",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12215,
+      "execution_price_paise": 12192,
+      "reference_notional_paise": 1746745
+    },
+    {
+      "line": 315,
+      "order_id": "BUY000144",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33564,
+      "execution_price_paise": 33540,
+      "reference_notional_paise": 4833216
+    },
+    {
+      "line": 316,
+      "order_id": "SELL000144",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33564,
+      "execution_price_paise": 33540,
+      "reference_notional_paise": 4833216
+    },
+    {
+      "line": 317,
+      "order_id": "BUY000145",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8134,
+      "execution_price_paise": 8109,
+      "reference_notional_paise": 1179430
+    },
+    {
+      "line": 318,
+      "order_id": "SELL000145",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8134,
+      "execution_price_paise": 8109,
+      "reference_notional_paise": 1179430
+    },
+    {
+      "line": 319,
+      "order_id": "REJ000029",
+      "status": "REJECTED",
+      "reason_code": "SIDE001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 320,
+      "order_id": "BUY000146",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10229,
+      "execution_price_paise": 10203,
+      "reference_notional_paise": 1493434
+    },
+    {
+      "line": 321,
+      "order_id": "SELL000146",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10229,
+      "execution_price_paise": 10203,
+      "reference_notional_paise": 1493434
+    },
+    {
+      "line": 322,
+      "order_id": "BUY000147",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20845,
+      "execution_price_paise": 20825,
+      "reference_notional_paise": 3064215
+    },
+    {
+      "line": 323,
+      "order_id": "SELL000147",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20845,
+      "execution_price_paise": 20825,
+      "reference_notional_paise": 3064215
+    },
+    {
+      "line": 324,
+      "order_id": "BUY000148",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12246,
+      "execution_price_paise": 12225,
+      "reference_notional_paise": 1812408
+    },
+    {
+      "line": 325,
+      "order_id": "SELL000148",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12246,
+      "execution_price_paise": 12225,
+      "reference_notional_paise": 1812408
+    },
+    {
+      "line": 326,
+      "order_id": "BUY000149",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33603,
+      "execution_price_paise": 33581,
+      "reference_notional_paise": 5006847
+    },
+    {
+      "line": 327,
+      "order_id": "SELL000149",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33603,
+      "execution_price_paise": 33581,
+      "reference_notional_paise": 5006847
+    },
+    {
+      "line": 328,
+      "order_id": "BUY000150",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8163,
+      "execution_price_paise": 8140,
+      "reference_notional_paise": 1224450
+    },
+    {
+      "line": 329,
+      "order_id": "SELL000150",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8163,
+      "execution_price_paise": 8140,
+      "reference_notional_paise": 1224450
+    },
+    {
+      "line": 330,
+      "order_id": "REJ000030",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 331,
+      "order_id": "BUY000151",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10196,
+      "execution_price_paise": 10172,
+      "reference_notional_paise": 1539596
+    },
+    {
+      "line": 332,
+      "order_id": "SELL000151",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10196,
+      "execution_price_paise": 10172,
+      "reference_notional_paise": 1539596
+    },
+    {
+      "line": 333,
+      "order_id": "BUY000152",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20816,
+      "execution_price_paise": 20791,
+      "reference_notional_paise": 3164032
+    },
+    {
+      "line": 334,
+      "order_id": "SELL000152",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20816,
+      "execution_price_paise": 20791,
+      "reference_notional_paise": 3164032
+    },
+    {
+      "line": 335,
+      "order_id": "BUY000153",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12211,
+      "execution_price_paise": 12185,
+      "reference_notional_paise": 1868283
+    },
+    {
+      "line": 336,
+      "order_id": "SELL000153",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12211,
+      "execution_price_paise": 12185,
+      "reference_notional_paise": 1868283
+    },
+    {
+      "line": 337,
+      "order_id": "BUY000154",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33576,
+      "execution_price_paise": 33556,
+      "reference_notional_paise": 5170704
+    },
+    {
+      "line": 338,
+      "order_id": "SELL000154",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33576,
+      "execution_price_paise": 33556,
+      "reference_notional_paise": 5170704
+    },
+    {
+      "line": 339,
+      "order_id": "BUY000155",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8126,
+      "execution_price_paise": 8105,
+      "reference_notional_paise": 1259530
+    },
+    {
+      "line": 340,
+      "order_id": "SELL000155",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8126,
+      "execution_price_paise": 8105,
+      "reference_notional_paise": 1259530
+    },
+    {
+      "line": 341,
+      "order_id": "BUY000155",
+      "status": "REJECTED",
+      "reason_code": "DUP001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 342,
+      "order_id": "BUY000156",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10255,
+      "execution_price_paise": 10233,
+      "reference_notional_paise": 1599780
+    },
+    {
+      "line": 343,
+      "order_id": "SELL000156",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10255,
+      "execution_price_paise": 10233,
+      "reference_notional_paise": 1599780
+    },
+    {
+      "line": 344,
+      "order_id": "BUY000157",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20879,
+      "execution_price_paise": 20856,
+      "reference_notional_paise": 3278003
+    },
+    {
+      "line": 345,
+      "order_id": "SELL000157",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20879,
+      "execution_price_paise": 20856,
+      "reference_notional_paise": 3278003
+    },
+    {
+      "line": 346,
+      "order_id": "BUY000158",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12268,
+      "execution_price_paise": 12244,
+      "reference_notional_paise": 1938344
+    },
+    {
+      "line": 347,
+      "order_id": "SELL000158",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12268,
+      "execution_price_paise": 12244,
+      "reference_notional_paise": 1938344
+    },
+    {
+      "line": 348,
+      "order_id": "BUY000159",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33641,
+      "execution_price_paise": 33616,
+      "reference_notional_paise": 5348919
+    },
+    {
+      "line": 349,
+      "order_id": "SELL000159",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33641,
+      "execution_price_paise": 33616,
+      "reference_notional_paise": 5348919
+    },
+    {
+      "line": 350,
+      "order_id": "BUY000160",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8181,
+      "execution_price_paise": 8155,
+      "reference_notional_paise": 1308960
+    },
+    {
+      "line": 351,
+      "order_id": "SELL000160",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8181,
+      "execution_price_paise": 8155,
+      "reference_notional_paise": 1308960
+    },
+    {
+      "line": 352,
+      "order_id": "REJ000032",
+      "status": "REJECTED",
+      "reason_code": "HOLD01",
+      "reference_price_paise": 20879,
+      "execution_price_paise": null,
+      "reference_notional_paise": 20878979121
+    },
+    {
+      "line": 353,
+      "order_id": "BUY000161",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10234,
+      "execution_price_paise": 10214,
+      "reference_notional_paise": 1647674
+    },
+    {
+      "line": 354,
+      "order_id": "SELL000161",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10234,
+      "execution_price_paise": 10214,
+      "reference_notional_paise": 1647674
+    },
+    {
+      "line": 355,
+      "order_id": "BUY000162",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20862,
+      "execution_price_paise": 20841,
+      "reference_notional_paise": 3379644
+    },
+    {
+      "line": 356,
+      "order_id": "SELL000162",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20862,
+      "execution_price_paise": 20841,
+      "reference_notional_paise": 3379644
+    },
+    {
+      "line": 357,
+      "order_id": "BUY000163",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12245,
+      "execution_price_paise": 12223,
+      "reference_notional_paise": 1995935
+    },
+    {
+      "line": 358,
+      "order_id": "SELL000163",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12245,
+      "execution_price_paise": 12223,
+      "reference_notional_paise": 1995935
+    },
+    {
+      "line": 359,
+      "order_id": "BUY000164",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33626,
+      "execution_price_paise": 33603,
+      "reference_notional_paise": 5514664
+    },
+    {
+      "line": 360,
+      "order_id": "SELL000164",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33626,
+      "execution_price_paise": 33603,
+      "reference_notional_paise": 5514664
+    },
+    {
+      "line": 361,
+      "order_id": "BUY000165",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8156,
+      "execution_price_paise": 8132,
+      "reference_notional_paise": 1345740
+    },
+    {
+      "line": 362,
+      "order_id": "SELL000165",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8156,
+      "execution_price_paise": 8132,
+      "reference_notional_paise": 1345740
+    },
+    {
+      "line": 363,
+      "order_id": "REJ000033",
+      "status": "REJECTED",
+      "reason_code": "PRICE01",
+      "reference_price_paise": 12245,
+      "execution_price_paise": null,
+      "reference_notional_paise": 12245
+    },
+    {
+      "line": 364,
+      "order_id": "BUY000166",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10211,
+      "execution_price_paise": 10186,
+      "reference_notional_paise": 1695026
+    },
+    {
+      "line": 365,
+      "order_id": "SELL000166",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10211,
+      "execution_price_paise": 10186,
+      "reference_notional_paise": 1695026
+    },
+    {
+      "line": 366,
+      "order_id": "BUY000167",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20843,
+      "execution_price_paise": 20817,
+      "reference_notional_paise": 3480781
+    },
+    {
+      "line": 367,
+      "order_id": "SELL000167",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20843,
+      "execution_price_paise": 20817,
+      "reference_notional_paise": 3480781
+    },
+    {
+      "line": 368,
+      "order_id": "BUY000168",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12220,
+      "execution_price_paise": 12200,
+      "reference_notional_paise": 2052960
+    },
+    {
+      "line": 369,
+      "order_id": "SELL000168",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12220,
+      "execution_price_paise": 12200,
+      "reference_notional_paise": 2052960
+    },
+    {
+      "line": 370,
+      "order_id": "BUY000169",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33609,
+      "execution_price_paise": 33588,
+      "reference_notional_paise": 5679921
+    },
+    {
+      "line": 371,
+      "order_id": "SELL000169",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33609,
+      "execution_price_paise": 33588,
+      "reference_notional_paise": 5679921
+    },
+    {
+      "line": 372,
+      "order_id": "BUY000170",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8129,
+      "execution_price_paise": 8107,
+      "reference_notional_paise": 1381930
+    },
+    {
+      "line": 373,
+      "order_id": "SELL000170",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8129,
+      "execution_price_paise": 8107,
+      "reference_notional_paise": 1381930
+    },
+    {
+      "line": 374,
+      "order_id": "REJ000034",
+      "status": "REJECTED",
+      "reason_code": "SIDE001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 375,
+      "order_id": "BUY000171",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10256,
+      "execution_price_paise": 10233,
+      "reference_notional_paise": 1753776
+    },
+    {
+      "line": 376,
+      "order_id": "SELL000171",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10256,
+      "execution_price_paise": 10233,
+      "reference_notional_paise": 1753776
+    },
+    {
+      "line": 377,
+      "order_id": "BUY000172",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20892,
+      "execution_price_paise": 20868,
+      "reference_notional_paise": 3593424
+    },
+    {
+      "line": 378,
+      "order_id": "SELL000172",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20892,
+      "execution_price_paise": 20868,
+      "reference_notional_paise": 3593424
+    },
+    {
+      "line": 379,
+      "order_id": "BUY000173",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12263,
+      "execution_price_paise": 12238,
+      "reference_notional_paise": 2121499
+    },
+    {
+      "line": 380,
+      "order_id": "SELL000173",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12263,
+      "execution_price_paise": 12238,
+      "reference_notional_paise": 2121499
+    },
+    {
+      "line": 381,
+      "order_id": "BUY000174",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33660,
+      "execution_price_paise": 33634,
+      "reference_notional_paise": 5856840
+    },
+    {
+      "line": 382,
+      "order_id": "SELL000174",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33660,
+      "execution_price_paise": 33634,
+      "reference_notional_paise": 5856840
+    },
+    {
+      "line": 383,
+      "order_id": "BUY000175",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8170,
+      "execution_price_paise": 8150,
+      "reference_notional_paise": 1429750
+    },
+    {
+      "line": 384,
+      "order_id": "SELL000175",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8170,
+      "execution_price_paise": 8150,
+      "reference_notional_paise": 1429750
+    },
+    {
+      "line": 385,
+      "order_id": "REJ000035",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 386,
+      "order_id": "BUY000176",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10245,
+      "execution_price_paise": 10224,
+      "reference_notional_paise": 1803120
+    },
+    {
+      "line": 387,
+      "order_id": "SELL000176",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10245,
+      "execution_price_paise": 10224,
+      "reference_notional_paise": 1803120
+    },
+    {
+      "line": 388,
+      "order_id": "BUY000177",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20885,
+      "execution_price_paise": 20863,
+      "reference_notional_paise": 3696645
+    },
+    {
+      "line": 389,
+      "order_id": "SELL000177",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20885,
+      "execution_price_paise": 20863,
+      "reference_notional_paise": 3696645
+    },
+    {
+      "line": 390,
+      "order_id": "BUY000178",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12250,
+      "execution_price_paise": 12227,
+      "reference_notional_paise": 2180500
+    },
+    {
+      "line": 391,
+      "order_id": "SELL000178",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12250,
+      "execution_price_paise": 12227,
+      "reference_notional_paise": 2180500
+    },
+    {
+      "line": 392,
+      "order_id": "BUY000179",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33655,
+      "execution_price_paise": 33631,
+      "reference_notional_paise": 6024245
+    },
+    {
+      "line": 393,
+      "order_id": "SELL000179",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33655,
+      "execution_price_paise": 33631,
+      "reference_notional_paise": 6024245
+    },
+    {
+      "line": 394,
+      "order_id": "BUY000180",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8155,
+      "execution_price_paise": 8130,
+      "reference_notional_paise": 1467900
+    },
+    {
+      "line": 395,
+      "order_id": "SELL000180",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8155,
+      "execution_price_paise": 8130,
+      "reference_notional_paise": 1467900
+    },
+    {
+      "line": 396,
+      "order_id": "BUY000180",
+      "status": "REJECTED",
+      "reason_code": "DUP001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 397,
+      "order_id": "BUY000181",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10278,
+      "execution_price_paise": 10252,
+      "reference_notional_paise": 1860318
+    },
+    {
+      "line": 398,
+      "order_id": "SELL000181",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10278,
+      "execution_price_paise": 10252,
+      "reference_notional_paise": 1860318
+    },
+    {
+      "line": 399,
+      "order_id": "BUY000182",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20922,
+      "execution_price_paise": 20902,
+      "reference_notional_paise": 3807804
+    },
+    {
+      "line": 400,
+      "order_id": "SELL000182",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20922,
+      "execution_price_paise": 20902,
+      "reference_notional_paise": 3807804
+    },
+    {
+      "line": 401,
+      "order_id": "BUY000183",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12281,
+      "execution_price_paise": 12260,
+      "reference_notional_paise": 2247423
+    },
+    {
+      "line": 402,
+      "order_id": "SELL000183",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12281,
+      "execution_price_paise": 12260,
+      "reference_notional_paise": 2247423
+    },
+    {
+      "line": 403,
+      "order_id": "BUY000184",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33694,
+      "execution_price_paise": 33672,
+      "reference_notional_paise": 6199696
+    },
+    {
+      "line": 404,
+      "order_id": "SELL000184",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33694,
+      "execution_price_paise": 33672,
+      "reference_notional_paise": 6199696
+    },
+    {
+      "line": 405,
+      "order_id": "BUY000185",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8184,
+      "execution_price_paise": 8161,
+      "reference_notional_paise": 1514040
+    },
+    {
+      "line": 406,
+      "order_id": "SELL000185",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8184,
+      "execution_price_paise": 8161,
+      "reference_notional_paise": 1514040
+    },
+    {
+      "line": 407,
+      "order_id": "REJ000037",
+      "status": "REJECTED",
+      "reason_code": "HOLD01",
+      "reference_price_paise": 20922,
+      "execution_price_paise": null,
+      "reference_notional_paise": 20921979078
+    },
+    {
+      "line": 408,
+      "order_id": "BUY000186",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10245,
+      "execution_price_paise": 10221,
+      "reference_notional_paise": 1905570
+    },
+    {
+      "line": 409,
+      "order_id": "SELL000186",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10245,
+      "execution_price_paise": 10221,
+      "reference_notional_paise": 1905570
+    },
+    {
+      "line": 410,
+      "order_id": "BUY000187",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20893,
+      "execution_price_paise": 20868,
+      "reference_notional_paise": 3906991
+    },
+    {
+      "line": 411,
+      "order_id": "SELL000187",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20893,
+      "execution_price_paise": 20868,
+      "reference_notional_paise": 3906991
+    },
+    {
+      "line": 412,
+      "order_id": "BUY000188",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12246,
+      "execution_price_paise": 12220,
+      "reference_notional_paise": 2302248
+    },
+    {
+      "line": 413,
+      "order_id": "SELL000188",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12246,
+      "execution_price_paise": 12220,
+      "reference_notional_paise": 2302248
+    },
+    {
+      "line": 414,
+      "order_id": "BUY000189",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33667,
+      "execution_price_paise": 33647,
+      "reference_notional_paise": 6363063
+    },
+    {
+      "line": 415,
+      "order_id": "SELL000189",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33667,
+      "execution_price_paise": 33647,
+      "reference_notional_paise": 6363063
+    },
+    {
+      "line": 416,
+      "order_id": "BUY000190",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8147,
+      "execution_price_paise": 8126,
+      "reference_notional_paise": 1547930
+    },
+    {
+      "line": 417,
+      "order_id": "SELL000190",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8147,
+      "execution_price_paise": 8126,
+      "reference_notional_paise": 1547930
+    },
+    {
+      "line": 418,
+      "order_id": "REJ000038",
+      "status": "REJECTED",
+      "reason_code": "PRICE01",
+      "reference_price_paise": 12246,
+      "execution_price_paise": null,
+      "reference_notional_paise": 12246
+    },
+    {
+      "line": 419,
+      "order_id": "BUY000191",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10304,
+      "execution_price_paise": 10282,
+      "reference_notional_paise": 1968064
+    },
+    {
+      "line": 420,
+      "order_id": "SELL000191",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10304,
+      "execution_price_paise": 10282,
+      "reference_notional_paise": 1968064
+    },
+    {
+      "line": 421,
+      "order_id": "BUY000192",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20956,
+      "execution_price_paise": 20933,
+      "reference_notional_paise": 4023552
+    },
+    {
+      "line": 422,
+      "order_id": "SELL000192",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20956,
+      "execution_price_paise": 20933,
+      "reference_notional_paise": 4023552
+    },
+    {
+      "line": 423,
+      "order_id": "BUY000193",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12303,
+      "execution_price_paise": 12279,
+      "reference_notional_paise": 2374479
+    },
+    {
+      "line": 424,
+      "order_id": "SELL000193",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12303,
+      "execution_price_paise": 12279,
+      "reference_notional_paise": 2374479
+    },
+    {
+      "line": 425,
+      "order_id": "BUY000194",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33732,
+      "execution_price_paise": 33707,
+      "reference_notional_paise": 6544008
+    },
+    {
+      "line": 426,
+      "order_id": "SELL000194",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33732,
+      "execution_price_paise": 33707,
+      "reference_notional_paise": 6544008
+    },
+    {
+      "line": 427,
+      "order_id": "BUY000195",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8202,
+      "execution_price_paise": 8176,
+      "reference_notional_paise": 1599390
+    },
+    {
+      "line": 428,
+      "order_id": "SELL000195",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8202,
+      "execution_price_paise": 8176,
+      "reference_notional_paise": 1599390
+    },
+    {
+      "line": 429,
+      "order_id": "REJ000039",
+      "status": "REJECTED",
+      "reason_code": "SIDE001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 430,
+      "order_id": "BUY000196",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10283,
+      "execution_price_paise": 10263,
+      "reference_notional_paise": 2015468
+    },
+    {
+      "line": 431,
+      "order_id": "SELL000196",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10283,
+      "execution_price_paise": 10263,
+      "reference_notional_paise": 2015468
+    },
+    {
+      "line": 432,
+      "order_id": "BUY000197",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20939,
+      "execution_price_paise": 20918,
+      "reference_notional_paise": 4124983
+    },
+    {
+      "line": 433,
+      "order_id": "SELL000197",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20939,
+      "execution_price_paise": 20918,
+      "reference_notional_paise": 4124983
+    },
+    {
+      "line": 434,
+      "order_id": "BUY000198",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12280,
+      "execution_price_paise": 12258,
+      "reference_notional_paise": 2431440
+    },
+    {
+      "line": 435,
+      "order_id": "SELL000198",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12280,
+      "execution_price_paise": 12258,
+      "reference_notional_paise": 2431440
+    },
+    {
+      "line": 436,
+      "order_id": "BUY000199",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33717,
+      "execution_price_paise": 33694,
+      "reference_notional_paise": 6709683
+    },
+    {
+      "line": 437,
+      "order_id": "SELL000199",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33717,
+      "execution_price_paise": 33694,
+      "reference_notional_paise": 6709683
+    },
+    {
+      "line": 438,
+      "order_id": "BUY000200",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8177,
+      "execution_price_paise": 8153,
+      "reference_notional_paise": 1635400
+    },
+    {
+      "line": 439,
+      "order_id": "SELL000200",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8177,
+      "execution_price_paise": 8153,
+      "reference_notional_paise": 1635400
+    },
+    {
+      "line": 440,
+      "order_id": "REJ000040",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 441,
+      "order_id": "BUY000201",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10260,
+      "execution_price_paise": 10235,
+      "reference_notional_paise": 2062260
+    },
+    {
+      "line": 442,
+      "order_id": "SELL000201",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10260,
+      "execution_price_paise": 10235,
+      "reference_notional_paise": 2062260
+    },
+    {
+      "line": 443,
+      "order_id": "BUY000202",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20920,
+      "execution_price_paise": 20894,
+      "reference_notional_paise": 4225840
+    },
+    {
+      "line": 444,
+      "order_id": "SELL000202",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20920,
+      "execution_price_paise": 20894,
+      "reference_notional_paise": 4225840
+    },
+    {
+      "line": 445,
+      "order_id": "BUY000203",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12255,
+      "execution_price_paise": 12235,
+      "reference_notional_paise": 2487765
+    },
+    {
+      "line": 446,
+      "order_id": "SELL000203",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12255,
+      "execution_price_paise": 12235,
+      "reference_notional_paise": 2487765
+    },
+    {
+      "line": 447,
+      "order_id": "BUY000204",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33700,
+      "execution_price_paise": 33679,
+      "reference_notional_paise": 6874800
+    },
+    {
+      "line": 448,
+      "order_id": "SELL000204",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33700,
+      "execution_price_paise": 33679,
+      "reference_notional_paise": 6874800
+    },
+    {
+      "line": 449,
+      "order_id": "BUY000205",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8150,
+      "execution_price_paise": 8128,
+      "reference_notional_paise": 1670750
+    },
+    {
+      "line": 450,
+      "order_id": "SELL000205",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8150,
+      "execution_price_paise": 8128,
+      "reference_notional_paise": 1670750
+    },
+    {
+      "line": 451,
+      "order_id": "BUY000205",
+      "status": "REJECTED",
+      "reason_code": "DUP001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 452,
+      "order_id": "BUY000206",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10305,
+      "execution_price_paise": 10282,
+      "reference_notional_paise": 2122830
+    },
+    {
+      "line": 453,
+      "order_id": "SELL000206",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10305,
+      "execution_price_paise": 10282,
+      "reference_notional_paise": 2122830
+    },
+    {
+      "line": 454,
+      "order_id": "BUY000207",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20969,
+      "execution_price_paise": 20945,
+      "reference_notional_paise": 4340583
+    },
+    {
+      "line": 455,
+      "order_id": "SELL000207",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20969,
+      "execution_price_paise": 20945,
+      "reference_notional_paise": 4340583
+    },
+    {
+      "line": 456,
+      "order_id": "BUY000208",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12298,
+      "execution_price_paise": 12273,
+      "reference_notional_paise": 2557984
+    },
+    {
+      "line": 457,
+      "order_id": "SELL000208",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12298,
+      "execution_price_paise": 12273,
+      "reference_notional_paise": 2557984
+    },
+    {
+      "line": 458,
+      "order_id": "BUY000209",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33751,
+      "execution_price_paise": 33725,
+      "reference_notional_paise": 7053959
+    },
+    {
+      "line": 459,
+      "order_id": "SELL000209",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33751,
+      "execution_price_paise": 33725,
+      "reference_notional_paise": 7053959
+    },
+    {
+      "line": 460,
+      "order_id": "BUY000210",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8191,
+      "execution_price_paise": 8171,
+      "reference_notional_paise": 1720110
+    },
+    {
+      "line": 461,
+      "order_id": "SELL000210",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8191,
+      "execution_price_paise": 8171,
+      "reference_notional_paise": 1720110
+    },
+    {
+      "line": 462,
+      "order_id": "REJ000042",
+      "status": "REJECTED",
+      "reason_code": "HOLD01",
+      "reference_price_paise": 20969,
+      "execution_price_paise": null,
+      "reference_notional_paise": 20968979031
+    },
+    {
+      "line": 463,
+      "order_id": "BUY000211",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10294,
+      "execution_price_paise": 10273,
+      "reference_notional_paise": 2172034
+    },
+    {
+      "line": 464,
+      "order_id": "SELL000211",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10294,
+      "execution_price_paise": 10273,
+      "reference_notional_paise": 2172034
+    },
+    {
+      "line": 465,
+      "order_id": "BUY000212",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20962,
+      "execution_price_paise": 20940,
+      "reference_notional_paise": 4443944
+    },
+    {
+      "line": 466,
+      "order_id": "SELL000212",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20962,
+      "execution_price_paise": 20940,
+      "reference_notional_paise": 4443944
+    },
+    {
+      "line": 467,
+      "order_id": "BUY000213",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12285,
+      "execution_price_paise": 12262,
+      "reference_notional_paise": 2616705
+    },
+    {
+      "line": 468,
+      "order_id": "SELL000213",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12285,
+      "execution_price_paise": 12262,
+      "reference_notional_paise": 2616705
+    },
+    {
+      "line": 469,
+      "order_id": "BUY000214",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33746,
+      "execution_price_paise": 33722,
+      "reference_notional_paise": 7221644
+    },
+    {
+      "line": 470,
+      "order_id": "SELL000214",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33746,
+      "execution_price_paise": 33722,
+      "reference_notional_paise": 7221644
+    },
+    {
+      "line": 471,
+      "order_id": "BUY000215",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8176,
+      "execution_price_paise": 8151,
+      "reference_notional_paise": 1757840
+    },
+    {
+      "line": 472,
+      "order_id": "SELL000215",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8176,
+      "execution_price_paise": 8151,
+      "reference_notional_paise": 1757840
+    },
+    {
+      "line": 473,
+      "order_id": "REJ000043",
+      "status": "REJECTED",
+      "reason_code": "PRICE01",
+      "reference_price_paise": 12285,
+      "execution_price_paise": null,
+      "reference_notional_paise": 12285
+    },
+    {
+      "line": 474,
+      "order_id": "BUY000216",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10327,
+      "execution_price_paise": 10301,
+      "reference_notional_paise": 2230632
+    },
+    {
+      "line": 475,
+      "order_id": "SELL000216",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10327,
+      "execution_price_paise": 10301,
+      "reference_notional_paise": 2230632
+    },
+    {
+      "line": 476,
+      "order_id": "BUY000217",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20999,
+      "execution_price_paise": 20979,
+      "reference_notional_paise": 4556783
+    },
+    {
+      "line": 477,
+      "order_id": "SELL000217",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20999,
+      "execution_price_paise": 20979,
+      "reference_notional_paise": 4556783
+    },
+    {
+      "line": 478,
+      "order_id": "BUY000218",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12316,
+      "execution_price_paise": 12295,
+      "reference_notional_paise": 2684888
+    },
+    {
+      "line": 479,
+      "order_id": "SELL000218",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12316,
+      "execution_price_paise": 12295,
+      "reference_notional_paise": 2684888
+    },
+    {
+      "line": 480,
+      "order_id": "BUY000219",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33785,
+      "execution_price_paise": 33763,
+      "reference_notional_paise": 7398915
+    },
+    {
+      "line": 481,
+      "order_id": "SELL000219",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33785,
+      "execution_price_paise": 33763,
+      "reference_notional_paise": 7398915
+    },
+    {
+      "line": 482,
+      "order_id": "BUY000220",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8205,
+      "execution_price_paise": 8182,
+      "reference_notional_paise": 1805100
+    },
+    {
+      "line": 483,
+      "order_id": "SELL000220",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8205,
+      "execution_price_paise": 8182,
+      "reference_notional_paise": 1805100
+    },
+    {
+      "line": 484,
+      "order_id": "REJ000044",
+      "status": "REJECTED",
+      "reason_code": "SIDE001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 485,
+      "order_id": "BUY000221",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10294,
+      "execution_price_paise": 10270,
+      "reference_notional_paise": 2274974
+    },
+    {
+      "line": 486,
+      "order_id": "SELL000221",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10294,
+      "execution_price_paise": 10270,
+      "reference_notional_paise": 2274974
+    },
+    {
+      "line": 487,
+      "order_id": "BUY000222",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20970,
+      "execution_price_paise": 20945,
+      "reference_notional_paise": 4655340
+    },
+    {
+      "line": 488,
+      "order_id": "SELL000222",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20970,
+      "execution_price_paise": 20945,
+      "reference_notional_paise": 4655340
+    },
+    {
+      "line": 489,
+      "order_id": "BUY000223",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12281,
+      "execution_price_paise": 12255,
+      "reference_notional_paise": 2738663
+    },
+    {
+      "line": 490,
+      "order_id": "SELL000223",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12281,
+      "execution_price_paise": 12255,
+      "reference_notional_paise": 2738663
+    },
+    {
+      "line": 491,
+      "order_id": "BUY000224",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33758,
+      "execution_price_paise": 33738,
+      "reference_notional_paise": 7561792
+    },
+    {
+      "line": 492,
+      "order_id": "SELL000224",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33758,
+      "execution_price_paise": 33738,
+      "reference_notional_paise": 7561792
+    },
+    {
+      "line": 493,
+      "order_id": "BUY000225",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8168,
+      "execution_price_paise": 8147,
+      "reference_notional_paise": 1837800
+    },
+    {
+      "line": 494,
+      "order_id": "SELL000225",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8168,
+      "execution_price_paise": 8147,
+      "reference_notional_paise": 1837800
+    },
+    {
+      "line": 495,
+      "order_id": "REJ000045",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 496,
+      "order_id": "BUY000226",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10353,
+      "execution_price_paise": 10331,
+      "reference_notional_paise": 2339778
+    },
+    {
+      "line": 497,
+      "order_id": "SELL000226",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10353,
+      "execution_price_paise": 10331,
+      "reference_notional_paise": 2339778
+    },
+    {
+      "line": 498,
+      "order_id": "BUY000227",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 21033,
+      "execution_price_paise": 21010,
+      "reference_notional_paise": 4774491
+    },
+    {
+      "line": 499,
+      "order_id": "SELL000227",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 21033,
+      "execution_price_paise": 21010,
+      "reference_notional_paise": 4774491
+    },
+    {
+      "line": 500,
+      "order_id": "BUY000228",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12338,
+      "execution_price_paise": 12314,
+      "reference_notional_paise": 2813064
+    },
+    {
+      "line": 501,
+      "order_id": "SELL000228",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12338,
+      "execution_price_paise": 12314,
+      "reference_notional_paise": 2813064
+    },
+    {
+      "line": 502,
+      "order_id": "BUY000229",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33823,
+      "execution_price_paise": 33798,
+      "reference_notional_paise": 7745467
+    },
+    {
+      "line": 503,
+      "order_id": "SELL000229",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33823,
+      "execution_price_paise": 33798,
+      "reference_notional_paise": 7745467
+    },
+    {
+      "line": 504,
+      "order_id": "BUY000230",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8223,
+      "execution_price_paise": 8197,
+      "reference_notional_paise": 1891290
+    },
+    {
+      "line": 505,
+      "order_id": "SELL000230",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8223,
+      "execution_price_paise": 8197,
+      "reference_notional_paise": 1891290
+    },
+    {
+      "line": 506,
+      "order_id": "BUY000230",
+      "status": "REJECTED",
+      "reason_code": "DUP001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 507,
+      "order_id": "BUY000231",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10332,
+      "execution_price_paise": 10312,
+      "reference_notional_paise": 2386692
+    },
+    {
+      "line": 508,
+      "order_id": "SELL000231",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10332,
+      "execution_price_paise": 10312,
+      "reference_notional_paise": 2386692
+    },
+    {
+      "line": 509,
+      "order_id": "BUY000232",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 21016,
+      "execution_price_paise": 20995,
+      "reference_notional_paise": 4875712
+    },
+    {
+      "line": 510,
+      "order_id": "SELL000232",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 21016,
+      "execution_price_paise": 20995,
+      "reference_notional_paise": 4875712
+    },
+    {
+      "line": 511,
+      "order_id": "BUY000233",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12315,
+      "execution_price_paise": 12293,
+      "reference_notional_paise": 2869395
+    },
+    {
+      "line": 512,
+      "order_id": "SELL000233",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12315,
+      "execution_price_paise": 12293,
+      "reference_notional_paise": 2869395
+    },
+    {
+      "line": 513,
+      "order_id": "BUY000234",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33808,
+      "execution_price_paise": 33785,
+      "reference_notional_paise": 7911072
+    },
+    {
+      "line": 514,
+      "order_id": "SELL000234",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33808,
+      "execution_price_paise": 33785,
+      "reference_notional_paise": 7911072
+    },
+    {
+      "line": 515,
+      "order_id": "BUY000235",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8198,
+      "execution_price_paise": 8174,
+      "reference_notional_paise": 1926530
+    },
+    {
+      "line": 516,
+      "order_id": "SELL000235",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8198,
+      "execution_price_paise": 8174,
+      "reference_notional_paise": 1926530
+    },
+    {
+      "line": 517,
+      "order_id": "REJ000047",
+      "status": "REJECTED",
+      "reason_code": "HOLD01",
+      "reference_price_paise": 21016,
+      "execution_price_paise": null,
+      "reference_notional_paise": 21015978984
+    },
+    {
+      "line": 518,
+      "order_id": "BUY000236",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10309,
+      "execution_price_paise": 10284,
+      "reference_notional_paise": 2432924
+    },
+    {
+      "line": 519,
+      "order_id": "SELL000236",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10309,
+      "execution_price_paise": 10284,
+      "reference_notional_paise": 2432924
+    },
+    {
+      "line": 520,
+      "order_id": "BUY000237",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20997,
+      "execution_price_paise": 20971,
+      "reference_notional_paise": 4976289
+    },
+    {
+      "line": 521,
+      "order_id": "SELL000237",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 20997,
+      "execution_price_paise": 20971,
+      "reference_notional_paise": 4976289
+    },
+    {
+      "line": 522,
+      "order_id": "BUY000238",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12290,
+      "execution_price_paise": 12270,
+      "reference_notional_paise": 2925020
+    },
+    {
+      "line": 523,
+      "order_id": "SELL000238",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12290,
+      "execution_price_paise": 12270,
+      "reference_notional_paise": 2925020
+    },
+    {
+      "line": 524,
+      "order_id": "BUY000239",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33791,
+      "execution_price_paise": 33770,
+      "reference_notional_paise": 8076049
+    },
+    {
+      "line": 525,
+      "order_id": "SELL000239",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33791,
+      "execution_price_paise": 33770,
+      "reference_notional_paise": 8076049
+    },
+    {
+      "line": 526,
+      "order_id": "BUY000240",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8171,
+      "execution_price_paise": 8149,
+      "reference_notional_paise": 1961040
+    },
+    {
+      "line": 527,
+      "order_id": "SELL000240",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8171,
+      "execution_price_paise": 8149,
+      "reference_notional_paise": 1961040
+    },
+    {
+      "line": 528,
+      "order_id": "REJ000048",
+      "status": "REJECTED",
+      "reason_code": "PRICE01",
+      "reference_price_paise": 12290,
+      "execution_price_paise": null,
+      "reference_notional_paise": 12290
+    },
+    {
+      "line": 529,
+      "order_id": "BUY000241",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10354,
+      "execution_price_paise": 10331,
+      "reference_notional_paise": 2495314
+    },
+    {
+      "line": 530,
+      "order_id": "SELL000241",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10354,
+      "execution_price_paise": 10331,
+      "reference_notional_paise": 2495314
+    },
+    {
+      "line": 531,
+      "order_id": "BUY000242",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 21046,
+      "execution_price_paise": 21022,
+      "reference_notional_paise": 5093132
+    },
+    {
+      "line": 532,
+      "order_id": "SELL000242",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 21046,
+      "execution_price_paise": 21022,
+      "reference_notional_paise": 5093132
+    },
+    {
+      "line": 533,
+      "order_id": "BUY000243",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12333,
+      "execution_price_paise": 12308,
+      "reference_notional_paise": 2996919
+    },
+    {
+      "line": 534,
+      "order_id": "SELL000243",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12333,
+      "execution_price_paise": 12308,
+      "reference_notional_paise": 2996919
+    },
+    {
+      "line": 535,
+      "order_id": "BUY000244",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33842,
+      "execution_price_paise": 33816,
+      "reference_notional_paise": 8257448
+    },
+    {
+      "line": 536,
+      "order_id": "SELL000244",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33842,
+      "execution_price_paise": 33816,
+      "reference_notional_paise": 8257448
+    },
+    {
+      "line": 537,
+      "order_id": "BUY000245",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8212,
+      "execution_price_paise": 8192,
+      "reference_notional_paise": 2011940
+    },
+    {
+      "line": 538,
+      "order_id": "SELL000245",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8212,
+      "execution_price_paise": 8192,
+      "reference_notional_paise": 2011940
+    },
+    {
+      "line": 539,
+      "order_id": "REJ000049",
+      "status": "REJECTED",
+      "reason_code": "SIDE001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    },
+    {
+      "line": 540,
+      "order_id": "BUY000246",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10343,
+      "execution_price_paise": 10322,
+      "reference_notional_paise": 2544378
+    },
+    {
+      "line": 541,
+      "order_id": "SELL000246",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 10343,
+      "execution_price_paise": 10322,
+      "reference_notional_paise": 2544378
+    },
+    {
+      "line": 542,
+      "order_id": "BUY000247",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 21039,
+      "execution_price_paise": 21017,
+      "reference_notional_paise": 5196633
+    },
+    {
+      "line": 543,
+      "order_id": "SELL000247",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 21039,
+      "execution_price_paise": 21017,
+      "reference_notional_paise": 5196633
+    },
+    {
+      "line": 544,
+      "order_id": "BUY000248",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12320,
+      "execution_price_paise": 12297,
+      "reference_notional_paise": 3055360
+    },
+    {
+      "line": 545,
+      "order_id": "SELL000248",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 12320,
+      "execution_price_paise": 12297,
+      "reference_notional_paise": 3055360
+    },
+    {
+      "line": 546,
+      "order_id": "BUY000249",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33837,
+      "execution_price_paise": 33813,
+      "reference_notional_paise": 8425413
+    },
+    {
+      "line": 547,
+      "order_id": "SELL000249",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 33837,
+      "execution_price_paise": 33813,
+      "reference_notional_paise": 8425413
+    },
+    {
+      "line": 548,
+      "order_id": "BUY000250",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8197,
+      "execution_price_paise": 8172,
+      "reference_notional_paise": 2049250
+    },
+    {
+      "line": 549,
+      "order_id": "SELL000250",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price_paise": 8197,
+      "execution_price_paise": 8172,
+      "reference_notional_paise": 2049250
+    },
+    {
+      "line": 550,
+      "order_id": "REJ000050",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price_paise": null,
+      "execution_price_paise": null,
+      "reference_notional_paise": null
+    }
+  ],
+  "settled_pairs": [
+    {
+      "buy_line": 1,
+      "sell_line": 2,
+      "stock_code": "ALPHA",
+      "quantity": 1,
+      "execution_price_paise": 9979,
+      "execution_notional_paise": 9979
+    },
+    {
+      "buy_line": 3,
+      "sell_line": 4,
+      "stock_code": "BETA",
+      "quantity": 2,
+      "execution_price_paise": 20478,
+      "execution_notional_paise": 40956
+    },
+    {
+      "buy_line": 5,
+      "sell_line": 6,
+      "stock_code": "GAMMA",
+      "quantity": 3,
+      "execution_price_paise": 12052,
+      "execution_notional_paise": 36156
+    },
+    {
+      "buy_line": 7,
+      "sell_line": 8,
+      "stock_code": "DELTA",
+      "quantity": 4,
+      "execution_price_paise": 33176,
+      "execution_notional_paise": 132704
+    },
+    {
+      "buy_line": 9,
+      "sell_line": 10,
+      "stock_code": "OMEGA",
+      "quantity": 5,
+      "execution_price_paise": 8025,
+      "execution_notional_paise": 40125
+    },
+    {
+      "buy_line": 12,
+      "sell_line": 13,
+      "stock_code": "ALPHA",
+      "quantity": 6,
+      "execution_price_paise": 10007,
+      "execution_notional_paise": 60042
+    },
+    {
+      "buy_line": 14,
+      "sell_line": 15,
+      "stock_code": "BETA",
+      "quantity": 7,
+      "execution_price_paise": 20517,
+      "execution_notional_paise": 143619
+    },
+    {
+      "buy_line": 16,
+      "sell_line": 17,
+      "stock_code": "GAMMA",
+      "quantity": 8,
+      "execution_price_paise": 12085,
+      "execution_notional_paise": 96680
+    },
+    {
+      "buy_line": 18,
+      "sell_line": 19,
+      "stock_code": "DELTA",
+      "quantity": 9,
+      "execution_price_paise": 33217,
+      "execution_notional_paise": 298953
+    },
+    {
+      "buy_line": 20,
+      "sell_line": 21,
+      "stock_code": "OMEGA",
+      "quantity": 10,
+      "execution_price_paise": 8056,
+      "execution_notional_paise": 80560
+    },
+    {
+      "buy_line": 23,
+      "sell_line": 24,
+      "stock_code": "ALPHA",
+      "quantity": 11,
+      "execution_price_paise": 9976,
+      "execution_notional_paise": 109736
+    },
+    {
+      "buy_line": 25,
+      "sell_line": 26,
+      "stock_code": "BETA",
+      "quantity": 12,
+      "execution_price_paise": 20483,
+      "execution_notional_paise": 245796
+    },
+    {
+      "buy_line": 27,
+      "sell_line": 28,
+      "stock_code": "GAMMA",
+      "quantity": 13,
+      "execution_price_paise": 12045,
+      "execution_notional_paise": 156585
+    },
+    {
+      "buy_line": 29,
+      "sell_line": 30,
+      "stock_code": "DELTA",
+      "quantity": 14,
+      "execution_price_paise": 33192,
+      "execution_notional_paise": 464688
+    },
+    {
+      "buy_line": 31,
+      "sell_line": 32,
+      "stock_code": "OMEGA",
+      "quantity": 15,
+      "execution_price_paise": 8021,
+      "execution_notional_paise": 120315
+    },
+    {
+      "buy_line": 34,
+      "sell_line": 35,
+      "stock_code": "ALPHA",
+      "quantity": 16,
+      "execution_price_paise": 10037,
+      "execution_notional_paise": 160592
+    },
+    {
+      "buy_line": 36,
+      "sell_line": 37,
+      "stock_code": "BETA",
+      "quantity": 17,
+      "execution_price_paise": 20548,
+      "execution_notional_paise": 349316
+    },
+    {
+      "buy_line": 38,
+      "sell_line": 39,
+      "stock_code": "GAMMA",
+      "quantity": 18,
+      "execution_price_paise": 12104,
+      "execution_notional_paise": 217872
+    },
+    {
+      "buy_line": 40,
+      "sell_line": 41,
+      "stock_code": "DELTA",
+      "quantity": 19,
+      "execution_price_paise": 33252,
+      "execution_notional_paise": 631788
+    },
+    {
+      "buy_line": 42,
+      "sell_line": 43,
+      "stock_code": "OMEGA",
+      "quantity": 20,
+      "execution_price_paise": 8071,
+      "execution_notional_paise": 161420
+    },
+    {
+      "buy_line": 45,
+      "sell_line": 46,
+      "stock_code": "ALPHA",
+      "quantity": 21,
+      "execution_price_paise": 10018,
+      "execution_notional_paise": 210378
+    },
+    {
+      "buy_line": 47,
+      "sell_line": 48,
+      "stock_code": "BETA",
+      "quantity": 22,
+      "execution_price_paise": 20533,
+      "execution_notional_paise": 451726
+    },
+    {
+      "buy_line": 49,
+      "sell_line": 50,
+      "stock_code": "GAMMA",
+      "quantity": 23,
+      "execution_price_paise": 12083,
+      "execution_notional_paise": 277909
+    },
+    {
+      "buy_line": 51,
+      "sell_line": 52,
+      "stock_code": "DELTA",
+      "quantity": 24,
+      "execution_price_paise": 33239,
+      "execution_notional_paise": 797736
+    },
+    {
+      "buy_line": 53,
+      "sell_line": 54,
+      "stock_code": "OMEGA",
+      "quantity": 25,
+      "execution_price_paise": 8048,
+      "execution_notional_paise": 201200
+    },
+    {
+      "buy_line": 56,
+      "sell_line": 57,
+      "stock_code": "ALPHA",
+      "quantity": 26,
+      "execution_price_paise": 9990,
+      "execution_notional_paise": 259740
+    },
+    {
+      "buy_line": 58,
+      "sell_line": 59,
+      "stock_code": "BETA",
+      "quantity": 27,
+      "execution_price_paise": 20509,
+      "execution_notional_paise": 553743
+    },
+    {
+      "buy_line": 60,
+      "sell_line": 61,
+      "stock_code": "GAMMA",
+      "quantity": 28,
+      "execution_price_paise": 12060,
+      "execution_notional_paise": 337680
+    },
+    {
+      "buy_line": 62,
+      "sell_line": 63,
+      "stock_code": "DELTA",
+      "quantity": 29,
+      "execution_price_paise": 33224,
+      "execution_notional_paise": 963496
+    },
+    {
+      "buy_line": 64,
+      "sell_line": 65,
+      "stock_code": "OMEGA",
+      "quantity": 30,
+      "execution_price_paise": 8023,
+      "execution_notional_paise": 240690
+    },
+    {
+      "buy_line": 67,
+      "sell_line": 68,
+      "stock_code": "ALPHA",
+      "quantity": 31,
+      "execution_price_paise": 10037,
+      "execution_notional_paise": 311147
+    },
+    {
+      "buy_line": 69,
+      "sell_line": 70,
+      "stock_code": "BETA",
+      "quantity": 32,
+      "execution_price_paise": 20560,
+      "execution_notional_paise": 657920
+    },
+    {
+      "buy_line": 71,
+      "sell_line": 72,
+      "stock_code": "GAMMA",
+      "quantity": 33,
+      "execution_price_paise": 12098,
+      "execution_notional_paise": 399234
+    },
+    {
+      "buy_line": 73,
+      "sell_line": 74,
+      "stock_code": "DELTA",
+      "quantity": 34,
+      "execution_price_paise": 33270,
+      "execution_notional_paise": 1131180
+    },
+    {
+      "buy_line": 75,
+      "sell_line": 76,
+      "stock_code": "OMEGA",
+      "quantity": 35,
+      "execution_price_paise": 8066,
+      "execution_notional_paise": 282310
+    },
+    {
+      "buy_line": 78,
+      "sell_line": 79,
+      "stock_code": "ALPHA",
+      "quantity": 36,
+      "execution_price_paise": 10028,
+      "execution_notional_paise": 361008
+    },
+    {
+      "buy_line": 80,
+      "sell_line": 81,
+      "stock_code": "BETA",
+      "quantity": 37,
+      "execution_price_paise": 20555,
+      "execution_notional_paise": 760535
+    },
+    {
+      "buy_line": 82,
+      "sell_line": 83,
+      "stock_code": "GAMMA",
+      "quantity": 38,
+      "execution_price_paise": 12087,
+      "execution_notional_paise": 459306
+    },
+    {
+      "buy_line": 84,
+      "sell_line": 85,
+      "stock_code": "DELTA",
+      "quantity": 39,
+      "execution_price_paise": 33267,
+      "execution_notional_paise": 1297413
+    },
+    {
+      "buy_line": 86,
+      "sell_line": 87,
+      "stock_code": "OMEGA",
+      "quantity": 40,
+      "execution_price_paise": 8046,
+      "execution_notional_paise": 321840
+    },
+    {
+      "buy_line": 89,
+      "sell_line": 90,
+      "stock_code": "ALPHA",
+      "quantity": 41,
+      "execution_price_paise": 10056,
+      "execution_notional_paise": 412296
+    },
+    {
+      "buy_line": 91,
+      "sell_line": 92,
+      "stock_code": "BETA",
+      "quantity": 42,
+      "execution_price_paise": 20594,
+      "execution_notional_paise": 864948
+    },
+    {
+      "buy_line": 93,
+      "sell_line": 94,
+      "stock_code": "GAMMA",
+      "quantity": 43,
+      "execution_price_paise": 12120,
+      "execution_notional_paise": 521160
+    },
+    {
+      "buy_line": 95,
+      "sell_line": 96,
+      "stock_code": "DELTA",
+      "quantity": 44,
+      "execution_price_paise": 33308,
+      "execution_notional_paise": 1465552
+    },
+    {
+      "buy_line": 97,
+      "sell_line": 98,
+      "stock_code": "OMEGA",
+      "quantity": 45,
+      "execution_price_paise": 8077,
+      "execution_notional_paise": 363465
+    },
+    {
+      "buy_line": 100,
+      "sell_line": 101,
+      "stock_code": "ALPHA",
+      "quantity": 46,
+      "execution_price_paise": 10025,
+      "execution_notional_paise": 461150
+    },
+    {
+      "buy_line": 102,
+      "sell_line": 103,
+      "stock_code": "BETA",
+      "quantity": 47,
+      "execution_price_paise": 20560,
+      "execution_notional_paise": 966320
+    },
+    {
+      "buy_line": 104,
+      "sell_line": 105,
+      "stock_code": "GAMMA",
+      "quantity": 48,
+      "execution_price_paise": 12080,
+      "execution_notional_paise": 579840
+    },
+    {
+      "buy_line": 106,
+      "sell_line": 107,
+      "stock_code": "DELTA",
+      "quantity": 49,
+      "execution_price_paise": 33283,
+      "execution_notional_paise": 1630867
+    },
+    {
+      "buy_line": 108,
+      "sell_line": 109,
+      "stock_code": "OMEGA",
+      "quantity": 50,
+      "execution_price_paise": 8042,
+      "execution_notional_paise": 402100
+    },
+    {
+      "buy_line": 111,
+      "sell_line": 112,
+      "stock_code": "ALPHA",
+      "quantity": 51,
+      "execution_price_paise": 10086,
+      "execution_notional_paise": 514386
+    },
+    {
+      "buy_line": 113,
+      "sell_line": 114,
+      "stock_code": "BETA",
+      "quantity": 52,
+      "execution_price_paise": 20625,
+      "execution_notional_paise": 1072500
+    },
+    {
+      "buy_line": 115,
+      "sell_line": 116,
+      "stock_code": "GAMMA",
+      "quantity": 53,
+      "execution_price_paise": 12139,
+      "execution_notional_paise": 643367
+    },
+    {
+      "buy_line": 117,
+      "sell_line": 118,
+      "stock_code": "DELTA",
+      "quantity": 54,
+      "execution_price_paise": 33343,
+      "execution_notional_paise": 1800522
+    },
+    {
+      "buy_line": 119,
+      "sell_line": 120,
+      "stock_code": "OMEGA",
+      "quantity": 55,
+      "execution_price_paise": 8092,
+      "execution_notional_paise": 445060
+    },
+    {
+      "buy_line": 122,
+      "sell_line": 123,
+      "stock_code": "ALPHA",
+      "quantity": 56,
+      "execution_price_paise": 10067,
+      "execution_notional_paise": 563752
+    },
+    {
+      "buy_line": 124,
+      "sell_line": 125,
+      "stock_code": "BETA",
+      "quantity": 57,
+      "execution_price_paise": 20610,
+      "execution_notional_paise": 1174770
+    },
+    {
+      "buy_line": 126,
+      "sell_line": 127,
+      "stock_code": "GAMMA",
+      "quantity": 58,
+      "execution_price_paise": 12118,
+      "execution_notional_paise": 702844
+    },
+    {
+      "buy_line": 128,
+      "sell_line": 129,
+      "stock_code": "DELTA",
+      "quantity": 59,
+      "execution_price_paise": 33330,
+      "execution_notional_paise": 1966470
+    },
+    {
+      "buy_line": 130,
+      "sell_line": 131,
+      "stock_code": "OMEGA",
+      "quantity": 60,
+      "execution_price_paise": 8069,
+      "execution_notional_paise": 484140
+    },
+    {
+      "buy_line": 133,
+      "sell_line": 134,
+      "stock_code": "ALPHA",
+      "quantity": 61,
+      "execution_price_paise": 10039,
+      "execution_notional_paise": 612379
+    },
+    {
+      "buy_line": 135,
+      "sell_line": 136,
+      "stock_code": "BETA",
+      "quantity": 62,
+      "execution_price_paise": 20586,
+      "execution_notional_paise": 1276332
+    },
+    {
+      "buy_line": 137,
+      "sell_line": 138,
+      "stock_code": "GAMMA",
+      "quantity": 63,
+      "execution_price_paise": 12095,
+      "execution_notional_paise": 761985
+    },
+    {
+      "buy_line": 139,
+      "sell_line": 140,
+      "stock_code": "DELTA",
+      "quantity": 64,
+      "execution_price_paise": 33315,
+      "execution_notional_paise": 2132160
+    },
+    {
+      "buy_line": 141,
+      "sell_line": 142,
+      "stock_code": "OMEGA",
+      "quantity": 65,
+      "execution_price_paise": 8044,
+      "execution_notional_paise": 522860
+    },
+    {
+      "buy_line": 144,
+      "sell_line": 145,
+      "stock_code": "ALPHA",
+      "quantity": 66,
+      "execution_price_paise": 10086,
+      "execution_notional_paise": 665676
+    },
+    {
+      "buy_line": 146,
+      "sell_line": 147,
+      "stock_code": "BETA",
+      "quantity": 67,
+      "execution_price_paise": 20637,
+      "execution_notional_paise": 1382679
+    },
+    {
+      "buy_line": 148,
+      "sell_line": 149,
+      "stock_code": "GAMMA",
+      "quantity": 68,
+      "execution_price_paise": 12133,
+      "execution_notional_paise": 825044
+    },
+    {
+      "buy_line": 150,
+      "sell_line": 151,
+      "stock_code": "DELTA",
+      "quantity": 69,
+      "execution_price_paise": 33361,
+      "execution_notional_paise": 2301909
+    },
+    {
+      "buy_line": 152,
+      "sell_line": 153,
+      "stock_code": "OMEGA",
+      "quantity": 70,
+      "execution_price_paise": 8087,
+      "execution_notional_paise": 566090
+    },
+    {
+      "buy_line": 155,
+      "sell_line": 156,
+      "stock_code": "ALPHA",
+      "quantity": 71,
+      "execution_price_paise": 10077,
+      "execution_notional_paise": 715467
+    },
+    {
+      "buy_line": 157,
+      "sell_line": 158,
+      "stock_code": "BETA",
+      "quantity": 72,
+      "execution_price_paise": 20632,
+      "execution_notional_paise": 1485504
+    },
+    {
+      "buy_line": 159,
+      "sell_line": 160,
+      "stock_code": "GAMMA",
+      "quantity": 73,
+      "execution_price_paise": 12122,
+      "execution_notional_paise": 884906
+    },
+    {
+      "buy_line": 161,
+      "sell_line": 162,
+      "stock_code": "DELTA",
+      "quantity": 74,
+      "execution_price_paise": 33358,
+      "execution_notional_paise": 2468492
+    },
+    {
+      "buy_line": 163,
+      "sell_line": 164,
+      "stock_code": "OMEGA",
+      "quantity": 75,
+      "execution_price_paise": 8067,
+      "execution_notional_paise": 605025
+    },
+    {
+      "buy_line": 166,
+      "sell_line": 167,
+      "stock_code": "ALPHA",
+      "quantity": 76,
+      "execution_price_paise": 10105,
+      "execution_notional_paise": 767980
+    },
+    {
+      "buy_line": 168,
+      "sell_line": 169,
+      "stock_code": "BETA",
+      "quantity": 77,
+      "execution_price_paise": 20671,
+      "execution_notional_paise": 1591667
+    },
+    {
+      "buy_line": 170,
+      "sell_line": 171,
+      "stock_code": "GAMMA",
+      "quantity": 78,
+      "execution_price_paise": 12155,
+      "execution_notional_paise": 948090
+    },
+    {
+      "buy_line": 172,
+      "sell_line": 173,
+      "stock_code": "DELTA",
+      "quantity": 79,
+      "execution_price_paise": 33399,
+      "execution_notional_paise": 2638521
+    },
+    {
+      "buy_line": 174,
+      "sell_line": 175,
+      "stock_code": "OMEGA",
+      "quantity": 80,
+      "execution_price_paise": 8098,
+      "execution_notional_paise": 647840
+    },
+    {
+      "buy_line": 177,
+      "sell_line": 178,
+      "stock_code": "ALPHA",
+      "quantity": 81,
+      "execution_price_paise": 10074,
+      "execution_notional_paise": 815994
+    },
+    {
+      "buy_line": 179,
+      "sell_line": 180,
+      "stock_code": "BETA",
+      "quantity": 82,
+      "execution_price_paise": 20637,
+      "execution_notional_paise": 1692234
+    },
+    {
+      "buy_line": 181,
+      "sell_line": 182,
+      "stock_code": "GAMMA",
+      "quantity": 83,
+      "execution_price_paise": 12115,
+      "execution_notional_paise": 1005545
+    },
+    {
+      "buy_line": 183,
+      "sell_line": 184,
+      "stock_code": "DELTA",
+      "quantity": 84,
+      "execution_price_paise": 33374,
+      "execution_notional_paise": 2803416
+    },
+    {
+      "buy_line": 185,
+      "sell_line": 186,
+      "stock_code": "OMEGA",
+      "quantity": 85,
+      "execution_price_paise": 8063,
+      "execution_notional_paise": 685355
+    },
+    {
+      "buy_line": 188,
+      "sell_line": 189,
+      "stock_code": "ALPHA",
+      "quantity": 86,
+      "execution_price_paise": 10135,
+      "execution_notional_paise": 871610
+    },
+    {
+      "buy_line": 190,
+      "sell_line": 191,
+      "stock_code": "BETA",
+      "quantity": 87,
+      "execution_price_paise": 20702,
+      "execution_notional_paise": 1801074
+    },
+    {
+      "buy_line": 192,
+      "sell_line": 193,
+      "stock_code": "GAMMA",
+      "quantity": 88,
+      "execution_price_paise": 12174,
+      "execution_notional_paise": 1071312
+    },
+    {
+      "buy_line": 194,
+      "sell_line": 195,
+      "stock_code": "DELTA",
+      "quantity": 89,
+      "execution_price_paise": 33434,
+      "execution_notional_paise": 2975626
+    },
+    {
+      "buy_line": 196,
+      "sell_line": 197,
+      "stock_code": "OMEGA",
+      "quantity": 90,
+      "execution_price_paise": 8113,
+      "execution_notional_paise": 730170
+    },
+    {
+      "buy_line": 199,
+      "sell_line": 200,
+      "stock_code": "ALPHA",
+      "quantity": 91,
+      "execution_price_paise": 10116,
+      "execution_notional_paise": 920556
+    },
+    {
+      "buy_line": 201,
+      "sell_line": 202,
+      "stock_code": "BETA",
+      "quantity": 92,
+      "execution_price_paise": 20687,
+      "execution_notional_paise": 1903204
+    },
+    {
+      "buy_line": 203,
+      "sell_line": 204,
+      "stock_code": "GAMMA",
+      "quantity": 93,
+      "execution_price_paise": 12153,
+      "execution_notional_paise": 1130229
+    },
+    {
+      "buy_line": 205,
+      "sell_line": 206,
+      "stock_code": "DELTA",
+      "quantity": 94,
+      "execution_price_paise": 33421,
+      "execution_notional_paise": 3141574
+    },
+    {
+      "buy_line": 207,
+      "sell_line": 208,
+      "stock_code": "OMEGA",
+      "quantity": 95,
+      "execution_price_paise": 8090,
+      "execution_notional_paise": 768550
+    },
+    {
+      "buy_line": 210,
+      "sell_line": 211,
+      "stock_code": "ALPHA",
+      "quantity": 96,
+      "execution_price_paise": 10088,
+      "execution_notional_paise": 968448
+    },
+    {
+      "buy_line": 212,
+      "sell_line": 213,
+      "stock_code": "BETA",
+      "quantity": 97,
+      "execution_price_paise": 20663,
+      "execution_notional_paise": 2004311
+    },
+    {
+      "buy_line": 214,
+      "sell_line": 215,
+      "stock_code": "GAMMA",
+      "quantity": 98,
+      "execution_price_paise": 12130,
+      "execution_notional_paise": 1188740
+    },
+    {
+      "buy_line": 216,
+      "sell_line": 217,
+      "stock_code": "DELTA",
+      "quantity": 99,
+      "execution_price_paise": 33406,
+      "execution_notional_paise": 3307194
+    },
+    {
+      "buy_line": 218,
+      "sell_line": 219,
+      "stock_code": "OMEGA",
+      "quantity": 100,
+      "execution_price_paise": 8065,
+      "execution_notional_paise": 806500
+    },
+    {
+      "buy_line": 221,
+      "sell_line": 222,
+      "stock_code": "ALPHA",
+      "quantity": 101,
+      "execution_price_paise": 10135,
+      "execution_notional_paise": 1023635
+    },
+    {
+      "buy_line": 223,
+      "sell_line": 224,
+      "stock_code": "BETA",
+      "quantity": 102,
+      "execution_price_paise": 20714,
+      "execution_notional_paise": 2112828
+    },
+    {
+      "buy_line": 225,
+      "sell_line": 226,
+      "stock_code": "GAMMA",
+      "quantity": 103,
+      "execution_price_paise": 12168,
+      "execution_notional_paise": 1253304
+    },
+    {
+      "buy_line": 227,
+      "sell_line": 228,
+      "stock_code": "DELTA",
+      "quantity": 104,
+      "execution_price_paise": 33452,
+      "execution_notional_paise": 3479008
+    },
+    {
+      "buy_line": 229,
+      "sell_line": 230,
+      "stock_code": "OMEGA",
+      "quantity": 105,
+      "execution_price_paise": 8108,
+      "execution_notional_paise": 851340
+    },
+    {
+      "buy_line": 232,
+      "sell_line": 233,
+      "stock_code": "ALPHA",
+      "quantity": 106,
+      "execution_price_paise": 10126,
+      "execution_notional_paise": 1073356
+    },
+    {
+      "buy_line": 234,
+      "sell_line": 235,
+      "stock_code": "BETA",
+      "quantity": 107,
+      "execution_price_paise": 20709,
+      "execution_notional_paise": 2215863
+    },
+    {
+      "buy_line": 236,
+      "sell_line": 237,
+      "stock_code": "GAMMA",
+      "quantity": 108,
+      "execution_price_paise": 12157,
+      "execution_notional_paise": 1312956
+    },
+    {
+      "buy_line": 238,
+      "sell_line": 239,
+      "stock_code": "DELTA",
+      "quantity": 109,
+      "execution_price_paise": 33449,
+      "execution_notional_paise": 3645941
+    },
+    {
+      "buy_line": 240,
+      "sell_line": 241,
+      "stock_code": "OMEGA",
+      "quantity": 110,
+      "execution_price_paise": 8088,
+      "execution_notional_paise": 889680
+    },
+    {
+      "buy_line": 243,
+      "sell_line": 244,
+      "stock_code": "ALPHA",
+      "quantity": 111,
+      "execution_price_paise": 10154,
+      "execution_notional_paise": 1127094
+    },
+    {
+      "buy_line": 245,
+      "sell_line": 246,
+      "stock_code": "BETA",
+      "quantity": 112,
+      "execution_price_paise": 20748,
+      "execution_notional_paise": 2323776
+    },
+    {
+      "buy_line": 247,
+      "sell_line": 248,
+      "stock_code": "GAMMA",
+      "quantity": 113,
+      "execution_price_paise": 12190,
+      "execution_notional_paise": 1377470
+    },
+    {
+      "buy_line": 249,
+      "sell_line": 250,
+      "stock_code": "DELTA",
+      "quantity": 114,
+      "execution_price_paise": 33490,
+      "execution_notional_paise": 3817860
+    },
+    {
+      "buy_line": 251,
+      "sell_line": 252,
+      "stock_code": "OMEGA",
+      "quantity": 115,
+      "execution_price_paise": 8119,
+      "execution_notional_paise": 933685
+    },
+    {
+      "buy_line": 254,
+      "sell_line": 255,
+      "stock_code": "ALPHA",
+      "quantity": 116,
+      "execution_price_paise": 10123,
+      "execution_notional_paise": 1174268
+    },
+    {
+      "buy_line": 256,
+      "sell_line": 257,
+      "stock_code": "BETA",
+      "quantity": 117,
+      "execution_price_paise": 20714,
+      "execution_notional_paise": 2423538
+    },
+    {
+      "buy_line": 258,
+      "sell_line": 259,
+      "stock_code": "GAMMA",
+      "quantity": 118,
+      "execution_price_paise": 12150,
+      "execution_notional_paise": 1433700
+    },
+    {
+      "buy_line": 260,
+      "sell_line": 261,
+      "stock_code": "DELTA",
+      "quantity": 119,
+      "execution_price_paise": 33465,
+      "execution_notional_paise": 3982335
+    },
+    {
+      "buy_line": 262,
+      "sell_line": 263,
+      "stock_code": "OMEGA",
+      "quantity": 120,
+      "execution_price_paise": 8084,
+      "execution_notional_paise": 970080
+    },
+    {
+      "buy_line": 265,
+      "sell_line": 266,
+      "stock_code": "ALPHA",
+      "quantity": 121,
+      "execution_price_paise": 10184,
+      "execution_notional_paise": 1232264
+    },
+    {
+      "buy_line": 267,
+      "sell_line": 268,
+      "stock_code": "BETA",
+      "quantity": 122,
+      "execution_price_paise": 20779,
+      "execution_notional_paise": 2535038
+    },
+    {
+      "buy_line": 269,
+      "sell_line": 270,
+      "stock_code": "GAMMA",
+      "quantity": 123,
+      "execution_price_paise": 12209,
+      "execution_notional_paise": 1501707
+    },
+    {
+      "buy_line": 271,
+      "sell_line": 272,
+      "stock_code": "DELTA",
+      "quantity": 124,
+      "execution_price_paise": 33525,
+      "execution_notional_paise": 4157100
+    },
+    {
+      "buy_line": 273,
+      "sell_line": 274,
+      "stock_code": "OMEGA",
+      "quantity": 125,
+      "execution_price_paise": 8134,
+      "execution_notional_paise": 1016750
+    },
+    {
+      "buy_line": 276,
+      "sell_line": 277,
+      "stock_code": "ALPHA",
+      "quantity": 126,
+      "execution_price_paise": 10165,
+      "execution_notional_paise": 1280790
+    },
+    {
+      "buy_line": 278,
+      "sell_line": 279,
+      "stock_code": "BETA",
+      "quantity": 127,
+      "execution_price_paise": 20764,
+      "execution_notional_paise": 2637028
+    },
+    {
+      "buy_line": 280,
+      "sell_line": 281,
+      "stock_code": "GAMMA",
+      "quantity": 128,
+      "execution_price_paise": 12188,
+      "execution_notional_paise": 1560064
+    },
+    {
+      "buy_line": 282,
+      "sell_line": 283,
+      "stock_code": "DELTA",
+      "quantity": 129,
+      "execution_price_paise": 33512,
+      "execution_notional_paise": 4323048
+    },
+    {
+      "buy_line": 284,
+      "sell_line": 285,
+      "stock_code": "OMEGA",
+      "quantity": 130,
+      "execution_price_paise": 8111,
+      "execution_notional_paise": 1054430
+    },
+    {
+      "buy_line": 287,
+      "sell_line": 288,
+      "stock_code": "ALPHA",
+      "quantity": 131,
+      "execution_price_paise": 10137,
+      "execution_notional_paise": 1327947
+    },
+    {
+      "buy_line": 289,
+      "sell_line": 290,
+      "stock_code": "BETA",
+      "quantity": 132,
+      "execution_price_paise": 20740,
+      "execution_notional_paise": 2737680
+    },
+    {
+      "buy_line": 291,
+      "sell_line": 292,
+      "stock_code": "GAMMA",
+      "quantity": 133,
+      "execution_price_paise": 12165,
+      "execution_notional_paise": 1617945
+    },
+    {
+      "buy_line": 293,
+      "sell_line": 294,
+      "stock_code": "DELTA",
+      "quantity": 134,
+      "execution_price_paise": 33497,
+      "execution_notional_paise": 4488598
+    },
+    {
+      "buy_line": 295,
+      "sell_line": 296,
+      "stock_code": "OMEGA",
+      "quantity": 135,
+      "execution_price_paise": 8086,
+      "execution_notional_paise": 1091610
+    },
+    {
+      "buy_line": 298,
+      "sell_line": 299,
+      "stock_code": "ALPHA",
+      "quantity": 136,
+      "execution_price_paise": 10184,
+      "execution_notional_paise": 1385024
+    },
+    {
+      "buy_line": 300,
+      "sell_line": 301,
+      "stock_code": "BETA",
+      "quantity": 137,
+      "execution_price_paise": 20791,
+      "execution_notional_paise": 2848367
+    },
+    {
+      "buy_line": 302,
+      "sell_line": 303,
+      "stock_code": "GAMMA",
+      "quantity": 138,
+      "execution_price_paise": 12203,
+      "execution_notional_paise": 1684014
+    },
+    {
+      "buy_line": 304,
+      "sell_line": 305,
+      "stock_code": "DELTA",
+      "quantity": 139,
+      "execution_price_paise": 33543,
+      "execution_notional_paise": 4662477
+    },
+    {
+      "buy_line": 306,
+      "sell_line": 307,
+      "stock_code": "OMEGA",
+      "quantity": 140,
+      "execution_price_paise": 8129,
+      "execution_notional_paise": 1138060
+    },
+    {
+      "buy_line": 309,
+      "sell_line": 310,
+      "stock_code": "ALPHA",
+      "quantity": 141,
+      "execution_price_paise": 10175,
+      "execution_notional_paise": 1434675
+    },
+    {
+      "buy_line": 311,
+      "sell_line": 312,
+      "stock_code": "BETA",
+      "quantity": 142,
+      "execution_price_paise": 20786,
+      "execution_notional_paise": 2951612
+    },
+    {
+      "buy_line": 313,
+      "sell_line": 314,
+      "stock_code": "GAMMA",
+      "quantity": 143,
+      "execution_price_paise": 12192,
+      "execution_notional_paise": 1743456
+    },
+    {
+      "buy_line": 315,
+      "sell_line": 316,
+      "stock_code": "DELTA",
+      "quantity": 144,
+      "execution_price_paise": 33540,
+      "execution_notional_paise": 4829760
+    },
+    {
+      "buy_line": 317,
+      "sell_line": 318,
+      "stock_code": "OMEGA",
+      "quantity": 145,
+      "execution_price_paise": 8109,
+      "execution_notional_paise": 1175805
+    },
+    {
+      "buy_line": 320,
+      "sell_line": 321,
+      "stock_code": "ALPHA",
+      "quantity": 146,
+      "execution_price_paise": 10203,
+      "execution_notional_paise": 1489638
+    },
+    {
+      "buy_line": 322,
+      "sell_line": 323,
+      "stock_code": "BETA",
+      "quantity": 147,
+      "execution_price_paise": 20825,
+      "execution_notional_paise": 3061275
+    },
+    {
+      "buy_line": 324,
+      "sell_line": 325,
+      "stock_code": "GAMMA",
+      "quantity": 148,
+      "execution_price_paise": 12225,
+      "execution_notional_paise": 1809300
+    },
+    {
+      "buy_line": 326,
+      "sell_line": 327,
+      "stock_code": "DELTA",
+      "quantity": 149,
+      "execution_price_paise": 33581,
+      "execution_notional_paise": 5003569
+    },
+    {
+      "buy_line": 328,
+      "sell_line": 329,
+      "stock_code": "OMEGA",
+      "quantity": 150,
+      "execution_price_paise": 8140,
+      "execution_notional_paise": 1221000
+    },
+    {
+      "buy_line": 331,
+      "sell_line": 332,
+      "stock_code": "ALPHA",
+      "quantity": 151,
+      "execution_price_paise": 10172,
+      "execution_notional_paise": 1535972
+    },
+    {
+      "buy_line": 333,
+      "sell_line": 334,
+      "stock_code": "BETA",
+      "quantity": 152,
+      "execution_price_paise": 20791,
+      "execution_notional_paise": 3160232
+    },
+    {
+      "buy_line": 335,
+      "sell_line": 336,
+      "stock_code": "GAMMA",
+      "quantity": 153,
+      "execution_price_paise": 12185,
+      "execution_notional_paise": 1864305
+    },
+    {
+      "buy_line": 337,
+      "sell_line": 338,
+      "stock_code": "DELTA",
+      "quantity": 154,
+      "execution_price_paise": 33556,
+      "execution_notional_paise": 5167624
+    },
+    {
+      "buy_line": 339,
+      "sell_line": 340,
+      "stock_code": "OMEGA",
+      "quantity": 155,
+      "execution_price_paise": 8105,
+      "execution_notional_paise": 1256275
+    },
+    {
+      "buy_line": 342,
+      "sell_line": 343,
+      "stock_code": "ALPHA",
+      "quantity": 156,
+      "execution_price_paise": 10233,
+      "execution_notional_paise": 1596348
+    },
+    {
+      "buy_line": 344,
+      "sell_line": 345,
+      "stock_code": "BETA",
+      "quantity": 157,
+      "execution_price_paise": 20856,
+      "execution_notional_paise": 3274392
+    },
+    {
+      "buy_line": 346,
+      "sell_line": 347,
+      "stock_code": "GAMMA",
+      "quantity": 158,
+      "execution_price_paise": 12244,
+      "execution_notional_paise": 1934552
+    },
+    {
+      "buy_line": 348,
+      "sell_line": 349,
+      "stock_code": "DELTA",
+      "quantity": 159,
+      "execution_price_paise": 33616,
+      "execution_notional_paise": 5344944
+    },
+    {
+      "buy_line": 350,
+      "sell_line": 351,
+      "stock_code": "OMEGA",
+      "quantity": 160,
+      "execution_price_paise": 8155,
+      "execution_notional_paise": 1304800
+    },
+    {
+      "buy_line": 353,
+      "sell_line": 354,
+      "stock_code": "ALPHA",
+      "quantity": 161,
+      "execution_price_paise": 10214,
+      "execution_notional_paise": 1644454
+    },
+    {
+      "buy_line": 355,
+      "sell_line": 356,
+      "stock_code": "BETA",
+      "quantity": 162,
+      "execution_price_paise": 20841,
+      "execution_notional_paise": 3376242
+    },
+    {
+      "buy_line": 357,
+      "sell_line": 358,
+      "stock_code": "GAMMA",
+      "quantity": 163,
+      "execution_price_paise": 12223,
+      "execution_notional_paise": 1992349
+    },
+    {
+      "buy_line": 359,
+      "sell_line": 360,
+      "stock_code": "DELTA",
+      "quantity": 164,
+      "execution_price_paise": 33603,
+      "execution_notional_paise": 5510892
+    },
+    {
+      "buy_line": 361,
+      "sell_line": 362,
+      "stock_code": "OMEGA",
+      "quantity": 165,
+      "execution_price_paise": 8132,
+      "execution_notional_paise": 1341780
+    },
+    {
+      "buy_line": 364,
+      "sell_line": 365,
+      "stock_code": "ALPHA",
+      "quantity": 166,
+      "execution_price_paise": 10186,
+      "execution_notional_paise": 1690876
+    },
+    {
+      "buy_line": 366,
+      "sell_line": 367,
+      "stock_code": "BETA",
+      "quantity": 167,
+      "execution_price_paise": 20817,
+      "execution_notional_paise": 3476439
+    },
+    {
+      "buy_line": 368,
+      "sell_line": 369,
+      "stock_code": "GAMMA",
+      "quantity": 168,
+      "execution_price_paise": 12200,
+      "execution_notional_paise": 2049600
+    },
+    {
+      "buy_line": 370,
+      "sell_line": 371,
+      "stock_code": "DELTA",
+      "quantity": 169,
+      "execution_price_paise": 33588,
+      "execution_notional_paise": 5676372
+    },
+    {
+      "buy_line": 372,
+      "sell_line": 373,
+      "stock_code": "OMEGA",
+      "quantity": 170,
+      "execution_price_paise": 8107,
+      "execution_notional_paise": 1378190
+    },
+    {
+      "buy_line": 375,
+      "sell_line": 376,
+      "stock_code": "ALPHA",
+      "quantity": 171,
+      "execution_price_paise": 10233,
+      "execution_notional_paise": 1749843
+    },
+    {
+      "buy_line": 377,
+      "sell_line": 378,
+      "stock_code": "BETA",
+      "quantity": 172,
+      "execution_price_paise": 20868,
+      "execution_notional_paise": 3589296
+    },
+    {
+      "buy_line": 379,
+      "sell_line": 380,
+      "stock_code": "GAMMA",
+      "quantity": 173,
+      "execution_price_paise": 12238,
+      "execution_notional_paise": 2117174
+    },
+    {
+      "buy_line": 381,
+      "sell_line": 382,
+      "stock_code": "DELTA",
+      "quantity": 174,
+      "execution_price_paise": 33634,
+      "execution_notional_paise": 5852316
+    },
+    {
+      "buy_line": 383,
+      "sell_line": 384,
+      "stock_code": "OMEGA",
+      "quantity": 175,
+      "execution_price_paise": 8150,
+      "execution_notional_paise": 1426250
+    },
+    {
+      "buy_line": 386,
+      "sell_line": 387,
+      "stock_code": "ALPHA",
+      "quantity": 176,
+      "execution_price_paise": 10224,
+      "execution_notional_paise": 1799424
+    },
+    {
+      "buy_line": 388,
+      "sell_line": 389,
+      "stock_code": "BETA",
+      "quantity": 177,
+      "execution_price_paise": 20863,
+      "execution_notional_paise": 3692751
+    },
+    {
+      "buy_line": 390,
+      "sell_line": 391,
+      "stock_code": "GAMMA",
+      "quantity": 178,
+      "execution_price_paise": 12227,
+      "execution_notional_paise": 2176406
+    },
+    {
+      "buy_line": 392,
+      "sell_line": 393,
+      "stock_code": "DELTA",
+      "quantity": 179,
+      "execution_price_paise": 33631,
+      "execution_notional_paise": 6019949
+    },
+    {
+      "buy_line": 394,
+      "sell_line": 395,
+      "stock_code": "OMEGA",
+      "quantity": 180,
+      "execution_price_paise": 8130,
+      "execution_notional_paise": 1463400
+    },
+    {
+      "buy_line": 397,
+      "sell_line": 398,
+      "stock_code": "ALPHA",
+      "quantity": 181,
+      "execution_price_paise": 10252,
+      "execution_notional_paise": 1855612
+    },
+    {
+      "buy_line": 399,
+      "sell_line": 400,
+      "stock_code": "BETA",
+      "quantity": 182,
+      "execution_price_paise": 20902,
+      "execution_notional_paise": 3804164
+    },
+    {
+      "buy_line": 401,
+      "sell_line": 402,
+      "stock_code": "GAMMA",
+      "quantity": 183,
+      "execution_price_paise": 12260,
+      "execution_notional_paise": 2243580
+    },
+    {
+      "buy_line": 403,
+      "sell_line": 404,
+      "stock_code": "DELTA",
+      "quantity": 184,
+      "execution_price_paise": 33672,
+      "execution_notional_paise": 6195648
+    },
+    {
+      "buy_line": 405,
+      "sell_line": 406,
+      "stock_code": "OMEGA",
+      "quantity": 185,
+      "execution_price_paise": 8161,
+      "execution_notional_paise": 1509785
+    },
+    {
+      "buy_line": 408,
+      "sell_line": 409,
+      "stock_code": "ALPHA",
+      "quantity": 186,
+      "execution_price_paise": 10221,
+      "execution_notional_paise": 1901106
+    },
+    {
+      "buy_line": 410,
+      "sell_line": 411,
+      "stock_code": "BETA",
+      "quantity": 187,
+      "execution_price_paise": 20868,
+      "execution_notional_paise": 3902316
+    },
+    {
+      "buy_line": 412,
+      "sell_line": 413,
+      "stock_code": "GAMMA",
+      "quantity": 188,
+      "execution_price_paise": 12220,
+      "execution_notional_paise": 2297360
+    },
+    {
+      "buy_line": 414,
+      "sell_line": 415,
+      "stock_code": "DELTA",
+      "quantity": 189,
+      "execution_price_paise": 33647,
+      "execution_notional_paise": 6359283
+    },
+    {
+      "buy_line": 416,
+      "sell_line": 417,
+      "stock_code": "OMEGA",
+      "quantity": 190,
+      "execution_price_paise": 8126,
+      "execution_notional_paise": 1543940
+    },
+    {
+      "buy_line": 419,
+      "sell_line": 420,
+      "stock_code": "ALPHA",
+      "quantity": 191,
+      "execution_price_paise": 10282,
+      "execution_notional_paise": 1963862
+    },
+    {
+      "buy_line": 421,
+      "sell_line": 422,
+      "stock_code": "BETA",
+      "quantity": 192,
+      "execution_price_paise": 20933,
+      "execution_notional_paise": 4019136
+    },
+    {
+      "buy_line": 423,
+      "sell_line": 424,
+      "stock_code": "GAMMA",
+      "quantity": 193,
+      "execution_price_paise": 12279,
+      "execution_notional_paise": 2369847
+    },
+    {
+      "buy_line": 425,
+      "sell_line": 426,
+      "stock_code": "DELTA",
+      "quantity": 194,
+      "execution_price_paise": 33707,
+      "execution_notional_paise": 6539158
+    },
+    {
+      "buy_line": 427,
+      "sell_line": 428,
+      "stock_code": "OMEGA",
+      "quantity": 195,
+      "execution_price_paise": 8176,
+      "execution_notional_paise": 1594320
+    },
+    {
+      "buy_line": 430,
+      "sell_line": 431,
+      "stock_code": "ALPHA",
+      "quantity": 196,
+      "execution_price_paise": 10263,
+      "execution_notional_paise": 2011548
+    },
+    {
+      "buy_line": 432,
+      "sell_line": 433,
+      "stock_code": "BETA",
+      "quantity": 197,
+      "execution_price_paise": 20918,
+      "execution_notional_paise": 4120846
+    },
+    {
+      "buy_line": 434,
+      "sell_line": 435,
+      "stock_code": "GAMMA",
+      "quantity": 198,
+      "execution_price_paise": 12258,
+      "execution_notional_paise": 2427084
+    },
+    {
+      "buy_line": 436,
+      "sell_line": 437,
+      "stock_code": "DELTA",
+      "quantity": 199,
+      "execution_price_paise": 33694,
+      "execution_notional_paise": 6705106
+    },
+    {
+      "buy_line": 438,
+      "sell_line": 439,
+      "stock_code": "OMEGA",
+      "quantity": 200,
+      "execution_price_paise": 8153,
+      "execution_notional_paise": 1630600
+    },
+    {
+      "buy_line": 441,
+      "sell_line": 442,
+      "stock_code": "ALPHA",
+      "quantity": 201,
+      "execution_price_paise": 10235,
+      "execution_notional_paise": 2057235
+    },
+    {
+      "buy_line": 443,
+      "sell_line": 444,
+      "stock_code": "BETA",
+      "quantity": 202,
+      "execution_price_paise": 20894,
+      "execution_notional_paise": 4220588
+    },
+    {
+      "buy_line": 445,
+      "sell_line": 446,
+      "stock_code": "GAMMA",
+      "quantity": 203,
+      "execution_price_paise": 12235,
+      "execution_notional_paise": 2483705
+    },
+    {
+      "buy_line": 447,
+      "sell_line": 448,
+      "stock_code": "DELTA",
+      "quantity": 204,
+      "execution_price_paise": 33679,
+      "execution_notional_paise": 6870516
+    },
+    {
+      "buy_line": 449,
+      "sell_line": 450,
+      "stock_code": "OMEGA",
+      "quantity": 205,
+      "execution_price_paise": 8128,
+      "execution_notional_paise": 1666240
+    },
+    {
+      "buy_line": 452,
+      "sell_line": 453,
+      "stock_code": "ALPHA",
+      "quantity": 206,
+      "execution_price_paise": 10282,
+      "execution_notional_paise": 2118092
+    },
+    {
+      "buy_line": 454,
+      "sell_line": 455,
+      "stock_code": "BETA",
+      "quantity": 207,
+      "execution_price_paise": 20945,
+      "execution_notional_paise": 4335615
+    },
+    {
+      "buy_line": 456,
+      "sell_line": 457,
+      "stock_code": "GAMMA",
+      "quantity": 208,
+      "execution_price_paise": 12273,
+      "execution_notional_paise": 2552784
+    },
+    {
+      "buy_line": 458,
+      "sell_line": 459,
+      "stock_code": "DELTA",
+      "quantity": 209,
+      "execution_price_paise": 33725,
+      "execution_notional_paise": 7048525
+    },
+    {
+      "buy_line": 460,
+      "sell_line": 461,
+      "stock_code": "OMEGA",
+      "quantity": 210,
+      "execution_price_paise": 8171,
+      "execution_notional_paise": 1715910
+    },
+    {
+      "buy_line": 463,
+      "sell_line": 464,
+      "stock_code": "ALPHA",
+      "quantity": 211,
+      "execution_price_paise": 10273,
+      "execution_notional_paise": 2167603
+    },
+    {
+      "buy_line": 465,
+      "sell_line": 466,
+      "stock_code": "BETA",
+      "quantity": 212,
+      "execution_price_paise": 20940,
+      "execution_notional_paise": 4439280
+    },
+    {
+      "buy_line": 467,
+      "sell_line": 468,
+      "stock_code": "GAMMA",
+      "quantity": 213,
+      "execution_price_paise": 12262,
+      "execution_notional_paise": 2611806
+    },
+    {
+      "buy_line": 469,
+      "sell_line": 470,
+      "stock_code": "DELTA",
+      "quantity": 214,
+      "execution_price_paise": 33722,
+      "execution_notional_paise": 7216508
+    },
+    {
+      "buy_line": 471,
+      "sell_line": 472,
+      "stock_code": "OMEGA",
+      "quantity": 215,
+      "execution_price_paise": 8151,
+      "execution_notional_paise": 1752465
+    },
+    {
+      "buy_line": 474,
+      "sell_line": 475,
+      "stock_code": "ALPHA",
+      "quantity": 216,
+      "execution_price_paise": 10301,
+      "execution_notional_paise": 2225016
+    },
+    {
+      "buy_line": 476,
+      "sell_line": 477,
+      "stock_code": "BETA",
+      "quantity": 217,
+      "execution_price_paise": 20979,
+      "execution_notional_paise": 4552443
+    },
+    {
+      "buy_line": 478,
+      "sell_line": 479,
+      "stock_code": "GAMMA",
+      "quantity": 218,
+      "execution_price_paise": 12295,
+      "execution_notional_paise": 2680310
+    },
+    {
+      "buy_line": 480,
+      "sell_line": 481,
+      "stock_code": "DELTA",
+      "quantity": 219,
+      "execution_price_paise": 33763,
+      "execution_notional_paise": 7394097
+    },
+    {
+      "buy_line": 482,
+      "sell_line": 483,
+      "stock_code": "OMEGA",
+      "quantity": 220,
+      "execution_price_paise": 8182,
+      "execution_notional_paise": 1800040
+    },
+    {
+      "buy_line": 485,
+      "sell_line": 486,
+      "stock_code": "ALPHA",
+      "quantity": 221,
+      "execution_price_paise": 10270,
+      "execution_notional_paise": 2269670
+    },
+    {
+      "buy_line": 487,
+      "sell_line": 488,
+      "stock_code": "BETA",
+      "quantity": 222,
+      "execution_price_paise": 20945,
+      "execution_notional_paise": 4649790
+    },
+    {
+      "buy_line": 489,
+      "sell_line": 490,
+      "stock_code": "GAMMA",
+      "quantity": 223,
+      "execution_price_paise": 12255,
+      "execution_notional_paise": 2732865
+    },
+    {
+      "buy_line": 491,
+      "sell_line": 492,
+      "stock_code": "DELTA",
+      "quantity": 224,
+      "execution_price_paise": 33738,
+      "execution_notional_paise": 7557312
+    },
+    {
+      "buy_line": 493,
+      "sell_line": 494,
+      "stock_code": "OMEGA",
+      "quantity": 225,
+      "execution_price_paise": 8147,
+      "execution_notional_paise": 1833075
+    },
+    {
+      "buy_line": 496,
+      "sell_line": 497,
+      "stock_code": "ALPHA",
+      "quantity": 226,
+      "execution_price_paise": 10331,
+      "execution_notional_paise": 2334806
+    },
+    {
+      "buy_line": 498,
+      "sell_line": 499,
+      "stock_code": "BETA",
+      "quantity": 227,
+      "execution_price_paise": 21010,
+      "execution_notional_paise": 4769270
+    },
+    {
+      "buy_line": 500,
+      "sell_line": 501,
+      "stock_code": "GAMMA",
+      "quantity": 228,
+      "execution_price_paise": 12314,
+      "execution_notional_paise": 2807592
+    },
+    {
+      "buy_line": 502,
+      "sell_line": 503,
+      "stock_code": "DELTA",
+      "quantity": 229,
+      "execution_price_paise": 33798,
+      "execution_notional_paise": 7739742
+    },
+    {
+      "buy_line": 504,
+      "sell_line": 505,
+      "stock_code": "OMEGA",
+      "quantity": 230,
+      "execution_price_paise": 8197,
+      "execution_notional_paise": 1885310
+    },
+    {
+      "buy_line": 507,
+      "sell_line": 508,
+      "stock_code": "ALPHA",
+      "quantity": 231,
+      "execution_price_paise": 10312,
+      "execution_notional_paise": 2382072
+    },
+    {
+      "buy_line": 509,
+      "sell_line": 510,
+      "stock_code": "BETA",
+      "quantity": 232,
+      "execution_price_paise": 20995,
+      "execution_notional_paise": 4870840
+    },
+    {
+      "buy_line": 511,
+      "sell_line": 512,
+      "stock_code": "GAMMA",
+      "quantity": 233,
+      "execution_price_paise": 12293,
+      "execution_notional_paise": 2864269
+    },
+    {
+      "buy_line": 513,
+      "sell_line": 514,
+      "stock_code": "DELTA",
+      "quantity": 234,
+      "execution_price_paise": 33785,
+      "execution_notional_paise": 7905690
+    },
+    {
+      "buy_line": 515,
+      "sell_line": 516,
+      "stock_code": "OMEGA",
+      "quantity": 235,
+      "execution_price_paise": 8174,
+      "execution_notional_paise": 1920890
+    },
+    {
+      "buy_line": 518,
+      "sell_line": 519,
+      "stock_code": "ALPHA",
+      "quantity": 236,
+      "execution_price_paise": 10284,
+      "execution_notional_paise": 2427024
+    },
+    {
+      "buy_line": 520,
+      "sell_line": 521,
+      "stock_code": "BETA",
+      "quantity": 237,
+      "execution_price_paise": 20971,
+      "execution_notional_paise": 4970127
+    },
+    {
+      "buy_line": 522,
+      "sell_line": 523,
+      "stock_code": "GAMMA",
+      "quantity": 238,
+      "execution_price_paise": 12270,
+      "execution_notional_paise": 2920260
+    },
+    {
+      "buy_line": 524,
+      "sell_line": 525,
+      "stock_code": "DELTA",
+      "quantity": 239,
+      "execution_price_paise": 33770,
+      "execution_notional_paise": 8071030
+    },
+    {
+      "buy_line": 526,
+      "sell_line": 527,
+      "stock_code": "OMEGA",
+      "quantity": 240,
+      "execution_price_paise": 8149,
+      "execution_notional_paise": 1955760
+    },
+    {
+      "buy_line": 529,
+      "sell_line": 530,
+      "stock_code": "ALPHA",
+      "quantity": 241,
+      "execution_price_paise": 10331,
+      "execution_notional_paise": 2489771
+    },
+    {
+      "buy_line": 531,
+      "sell_line": 532,
+      "stock_code": "BETA",
+      "quantity": 242,
+      "execution_price_paise": 21022,
+      "execution_notional_paise": 5087324
+    },
+    {
+      "buy_line": 533,
+      "sell_line": 534,
+      "stock_code": "GAMMA",
+      "quantity": 243,
+      "execution_price_paise": 12308,
+      "execution_notional_paise": 2990844
+    },
+    {
+      "buy_line": 535,
+      "sell_line": 536,
+      "stock_code": "DELTA",
+      "quantity": 244,
+      "execution_price_paise": 33816,
+      "execution_notional_paise": 8251104
+    },
+    {
+      "buy_line": 537,
+      "sell_line": 538,
+      "stock_code": "OMEGA",
+      "quantity": 245,
+      "execution_price_paise": 8192,
+      "execution_notional_paise": 2007040
+    },
+    {
+      "buy_line": 540,
+      "sell_line": 541,
+      "stock_code": "ALPHA",
+      "quantity": 246,
+      "execution_price_paise": 10322,
+      "execution_notional_paise": 2539212
+    },
+    {
+      "buy_line": 542,
+      "sell_line": 543,
+      "stock_code": "BETA",
+      "quantity": 247,
+      "execution_price_paise": 21017,
+      "execution_notional_paise": 5191199
+    },
+    {
+      "buy_line": 544,
+      "sell_line": 545,
+      "stock_code": "GAMMA",
+      "quantity": 248,
+      "execution_price_paise": 12297,
+      "execution_notional_paise": 3049656
+    },
+    {
+      "buy_line": 546,
+      "sell_line": 547,
+      "stock_code": "DELTA",
+      "quantity": 249,
+      "execution_price_paise": 33813,
+      "execution_notional_paise": 8419437
+    },
+    {
+      "buy_line": 548,
+      "sell_line": 549,
+      "stock_code": "OMEGA",
+      "quantity": 250,
+      "execution_price_paise": 8172,
+      "execution_notional_paise": 2043000
+    }
+  ],
+  "final_holdings": [
+    {
+      "client_id": "BUYER01",
+      "stock_code": "ALPHA",
+      "quantity": 1135,
+      "reference_price_paise": 10343,
+      "valuation_paise": 11739305
+    },
+    {
+      "client_id": "BUYER01",
+      "stock_code": "BETA",
+      "quantity": 1145,
+      "reference_price_paise": 21039,
+      "valuation_paise": 24089655
+    },
+    {
+      "client_id": "BUYER01",
+      "stock_code": "DELTA",
+      "quantity": 1165,
+      "reference_price_paise": 33837,
+      "valuation_paise": 39420105
+    },
+    {
+      "client_id": "BUYER01",
+      "stock_code": "GAMMA",
+      "quantity": 1155,
+      "reference_price_paise": 12320,
+      "valuation_paise": 14229600
+    },
+    {
+      "client_id": "BUYER01",
+      "stock_code": "OMEGA",
+      "quantity": 1175,
+      "reference_price_paise": 8197,
+      "valuation_paise": 9631475
+    },
+    {
+      "client_id": "BUYER02",
+      "stock_code": "ALPHA",
+      "quantity": 1185,
+      "reference_price_paise": 10343,
+      "valuation_paise": 12256455
+    },
+    {
+      "client_id": "BUYER02",
+      "stock_code": "BETA",
+      "quantity": 1195,
+      "reference_price_paise": 21039,
+      "valuation_paise": 25141605
+    },
+    {
+      "client_id": "BUYER02",
+      "stock_code": "DELTA",
+      "quantity": 1215,
+      "reference_price_paise": 33837,
+      "valuation_paise": 41111955
+    },
+    {
+      "client_id": "BUYER02",
+      "stock_code": "GAMMA",
+      "quantity": 1205,
+      "reference_price_paise": 12320,
+      "valuation_paise": 14845600
+    },
+    {
+      "client_id": "BUYER02",
+      "stock_code": "OMEGA",
+      "quantity": 1225,
+      "reference_price_paise": 8197,
+      "valuation_paise": 10041325
+    },
+    {
+      "client_id": "BUYER03",
+      "stock_code": "ALPHA",
+      "quantity": 1235,
+      "reference_price_paise": 10343,
+      "valuation_paise": 12773605
+    },
+    {
+      "client_id": "BUYER03",
+      "stock_code": "BETA",
+      "quantity": 1245,
+      "reference_price_paise": 21039,
+      "valuation_paise": 26193555
+    },
+    {
+      "client_id": "BUYER03",
+      "stock_code": "DELTA",
+      "quantity": 1265,
+      "reference_price_paise": 33837,
+      "valuation_paise": 42803805
+    },
+    {
+      "client_id": "BUYER03",
+      "stock_code": "GAMMA",
+      "quantity": 1255,
+      "reference_price_paise": 12320,
+      "valuation_paise": 15461600
+    },
+    {
+      "client_id": "BUYER03",
+      "stock_code": "OMEGA",
+      "quantity": 1275,
+      "reference_price_paise": 8197,
+      "valuation_paise": 10451175
+    },
+    {
+      "client_id": "BUYER04",
+      "stock_code": "ALPHA",
+      "quantity": 1285,
+      "reference_price_paise": 10343,
+      "valuation_paise": 13290755
+    },
+    {
+      "client_id": "BUYER04",
+      "stock_code": "BETA",
+      "quantity": 1295,
+      "reference_price_paise": 21039,
+      "valuation_paise": 27245505
+    },
+    {
+      "client_id": "BUYER04",
+      "stock_code": "DELTA",
+      "quantity": 1315,
+      "reference_price_paise": 33837,
+      "valuation_paise": 44495655
+    },
+    {
+      "client_id": "BUYER04",
+      "stock_code": "GAMMA",
+      "quantity": 1305,
+      "reference_price_paise": 12320,
+      "valuation_paise": 16077600
+    },
+    {
+      "client_id": "BUYER04",
+      "stock_code": "OMEGA",
+      "quantity": 1325,
+      "reference_price_paise": 8197,
+      "valuation_paise": 10861025
+    },
+    {
+      "client_id": "BUYER05",
+      "stock_code": "ALPHA",
+      "quantity": 1335,
+      "reference_price_paise": 10343,
+      "valuation_paise": 13807905
+    },
+    {
+      "client_id": "BUYER05",
+      "stock_code": "BETA",
+      "quantity": 1345,
+      "reference_price_paise": 21039,
+      "valuation_paise": 28297455
+    },
+    {
+      "client_id": "BUYER05",
+      "stock_code": "DELTA",
+      "quantity": 1365,
+      "reference_price_paise": 33837,
+      "valuation_paise": 46187505
+    },
+    {
+      "client_id": "BUYER05",
+      "stock_code": "GAMMA",
+      "quantity": 1355,
+      "reference_price_paise": 12320,
+      "valuation_paise": 16693600
+    },
+    {
+      "client_id": "BUYER05",
+      "stock_code": "OMEGA",
+      "quantity": 1375,
+      "reference_price_paise": 8197,
+      "valuation_paise": 11270875
+    },
+    {
+      "client_id": "SELLER01",
+      "stock_code": "ALPHA",
+      "quantity": 865,
+      "reference_price_paise": 10343,
+      "valuation_paise": 8946695
+    },
+    {
+      "client_id": "SELLER01",
+      "stock_code": "BETA",
+      "quantity": 855,
+      "reference_price_paise": 21039,
+      "valuation_paise": 17988345
+    },
+    {
+      "client_id": "SELLER01",
+      "stock_code": "DELTA",
+      "quantity": 835,
+      "reference_price_paise": 33837,
+      "valuation_paise": 28253895
+    },
+    {
+      "client_id": "SELLER01",
+      "stock_code": "GAMMA",
+      "quantity": 845,
+      "reference_price_paise": 12320,
+      "valuation_paise": 10410400
+    },
+    {
+      "client_id": "SELLER01",
+      "stock_code": "OMEGA",
+      "quantity": 825,
+      "reference_price_paise": 8197,
+      "valuation_paise": 6762525
+    },
+    {
+      "client_id": "SELLER02",
+      "stock_code": "ALPHA",
+      "quantity": 815,
+      "reference_price_paise": 10343,
+      "valuation_paise": 8429545
+    },
+    {
+      "client_id": "SELLER02",
+      "stock_code": "BETA",
+      "quantity": 805,
+      "reference_price_paise": 21039,
+      "valuation_paise": 16936395
+    },
+    {
+      "client_id": "SELLER02",
+      "stock_code": "DELTA",
+      "quantity": 785,
+      "reference_price_paise": 33837,
+      "valuation_paise": 26562045
+    },
+    {
+      "client_id": "SELLER02",
+      "stock_code": "GAMMA",
+      "quantity": 795,
+      "reference_price_paise": 12320,
+      "valuation_paise": 9794400
+    },
+    {
+      "client_id": "SELLER02",
+      "stock_code": "OMEGA",
+      "quantity": 775,
+      "reference_price_paise": 8197,
+      "valuation_paise": 6352675
+    },
+    {
+      "client_id": "SELLER03",
+      "stock_code": "ALPHA",
+      "quantity": 765,
+      "reference_price_paise": 10343,
+      "valuation_paise": 7912395
+    },
+    {
+      "client_id": "SELLER03",
+      "stock_code": "BETA",
+      "quantity": 755,
+      "reference_price_paise": 21039,
+      "valuation_paise": 15884445
+    },
+    {
+      "client_id": "SELLER03",
+      "stock_code": "DELTA",
+      "quantity": 735,
+      "reference_price_paise": 33837,
+      "valuation_paise": 24870195
+    },
+    {
+      "client_id": "SELLER03",
+      "stock_code": "GAMMA",
+      "quantity": 745,
+      "reference_price_paise": 12320,
+      "valuation_paise": 9178400
+    },
+    {
+      "client_id": "SELLER03",
+      "stock_code": "OMEGA",
+      "quantity": 725,
+      "reference_price_paise": 8197,
+      "valuation_paise": 5942825
+    },
+    {
+      "client_id": "SELLER04",
+      "stock_code": "ALPHA",
+      "quantity": 715,
+      "reference_price_paise": 10343,
+      "valuation_paise": 7395245
+    },
+    {
+      "client_id": "SELLER04",
+      "stock_code": "BETA",
+      "quantity": 705,
+      "reference_price_paise": 21039,
+      "valuation_paise": 14832495
+    },
+    {
+      "client_id": "SELLER04",
+      "stock_code": "DELTA",
+      "quantity": 685,
+      "reference_price_paise": 33837,
+      "valuation_paise": 23178345
+    },
+    {
+      "client_id": "SELLER04",
+      "stock_code": "GAMMA",
+      "quantity": 695,
+      "reference_price_paise": 12320,
+      "valuation_paise": 8562400
+    },
+    {
+      "client_id": "SELLER04",
+      "stock_code": "OMEGA",
+      "quantity": 675,
+      "reference_price_paise": 8197,
+      "valuation_paise": 5532975
+    },
+    {
+      "client_id": "SELLER05",
+      "stock_code": "ALPHA",
+      "quantity": 665,
+      "reference_price_paise": 10343,
+      "valuation_paise": 6878095
+    },
+    {
+      "client_id": "SELLER05",
+      "stock_code": "BETA",
+      "quantity": 655,
+      "reference_price_paise": 21039,
+      "valuation_paise": 13780545
+    },
+    {
+      "client_id": "SELLER05",
+      "stock_code": "DELTA",
+      "quantity": 635,
+      "reference_price_paise": 33837,
+      "valuation_paise": 21486495
+    },
+    {
+      "client_id": "SELLER05",
+      "stock_code": "GAMMA",
+      "quantity": 645,
+      "reference_price_paise": 12320,
+      "valuation_paise": 7946400
+    },
+    {
+      "client_id": "SELLER05",
+      "stock_code": "OMEGA",
+      "quantity": 625,
+      "reference_price_paise": 8197,
+      "valuation_paise": 5123125
+    }
+  ]
+}

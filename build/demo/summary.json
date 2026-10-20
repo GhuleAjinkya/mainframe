@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "engine": "python-reference",
+  "rexx_executed": false,
+  "totals": {
+    "total": 14,
+    "settled": 4,
+    "pending": 2,
+    "rejected": 8,
+    "input": 14,
+    "settlement": 14
+  },
+  "inputs": {
+    "orders": {
+      "sha256": "a446e94db24f8ccd8a3cfd471a5edf1c977a9e3216dede45ac0df564b284d28f"
+    },
+    "holdings": {
+      "sha256": "8332c056d41c3fdb1797f3519196a176441dafbd64e2480c3e82eea68e5bf91c"
+    },
+    "prices": {
+      "sha256": "f4b6247c91cedb371fcdcf17cf0151dffcbeb049c1117e013c0fd7d38b3f728a"
+    }
+  },
+  "holdings": [
+    {
+      "client_id": "SELLER1",
+      "stock_code": "ALPHA",
+      "quantity": 90,
+      "reference_price_paise": 10200,
+      "valuation_paise": 918000
+    },
+    {
+      "client_id": "SELLER2",
+      "stock_code": "BETA",
+      "quantity": 15,
+      "reference_price_paise": 20500,
+      "valuation_paise": 307500
+    },
+    {
+      "client_id": "BUYER1",
+      "stock_code": "ALPHA",
+      "quantity": 15,
+      "reference_price_paise": 10200,
+      "valuation_paise": 153000
+    },
+    {
+      "client_id": "FUTCLNT",
+      "stock_code": "FUTURE",
+      "quantity": 2,
+      "reference_price_paise": null,
+      "valuation_paise": null
+    },
+    {
+      "client_id": "BUYER2",
+      "stock_code": "BETA",
+      "quantity": 5,
+      "reference_price_paise": 20500,
+      "valuation_paise": 102500
+    },
+    {
+      "client_id": "BUYER3",
+      "stock_code": "ALPHA",
+      "quantity": 0,
+      "reference_price_paise": 10200,
+      "valuation_paise": 0
+    }
+  ]
+}

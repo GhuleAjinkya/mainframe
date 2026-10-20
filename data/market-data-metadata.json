@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "dataset_kind": "synthetic_fixture",
+  "contains_real_market_data": false,
+  "source_provider": null,
+  "retrieved_at_utc": null,
+  "prepared_date": "2026-10-19",
+  "provenance": "Hand-designed coursework fixtures; all symbols, clients, quantities and prices are synthetic.",
+  "currency": "INR",
+  "money_unit": "paise",
+  "timestamps_timezone": "UTC",
+  "market_session": "Synthetic 09:00 UTC observations; no real exchange calendar is asserted.",
+  "adjustment_policy": "Not applicable to fictional instruments; no corporate actions or adjusted prices.",
+  "record_count": 5,
+  "prices_sha256": "f4b6247c91cedb371fcdcf17cf0151dffcbeb049c1117e013c0fd7d38b3f728a",
+  "future_reference_case": "FUTURE has only 2026-01-03 data; FUTURE1 at 2026-01-02 08:00 UTC must reject with PRICE01.",
+  "historical_import_status": "No real historical export was supplied or retrieved; local-only instructions prohibit network retrieval.",
+  "fallback_policy": "Explicitly selected by local demo defaults; never substituted by the CSV importer."
+}

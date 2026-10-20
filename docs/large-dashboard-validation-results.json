@@ -1,0 +1,42 @@
+{
+  "observed_at_utc": "2026-10-19T11:31:30.791571+00:00",
+  "tests_run": 87,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_command": "python -m unittest discover -s tests -v",
+  "data_kind": "synthetic_fixture",
+  "totals": {
+    "total": 550,
+    "settled": 500,
+    "pending": 0,
+    "rejected": 50,
+    "input": 550,
+    "settlement": 550
+  },
+  "matched_pairs": 250,
+  "audit_json_objects": 550,
+  "holding_positions": 50,
+  "price_observations": 250,
+  "replay_events": 802,
+  "executed_notional_paise": 533986085,
+  "checks": {
+    "input_snapshot_match": "PASS",
+    "report_balance": "PASS",
+    "json_record_count": "PASS",
+    "settlement_content": "PASS",
+    "holdings_reconciliation": "PASS",
+    "trade_balance": "PASS"
+  },
+  "native_tk_gui_tested": true,
+  "native_cobol_compiled": false,
+  "native_rexx_executed": false,
+  "zos_submitted": false,
+  "gui_benchmark": {
+    "events_advanced": 801,
+    "seconds": 24.766,
+    "median_render_ms": 28.874,
+    "p95_render_ms": 52.667,
+    "maximum_render_ms": 90.162
+  }
+}

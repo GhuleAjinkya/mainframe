@@ -1,0 +1,27 @@
+{
+  "observed_at_utc": "2026-10-18T19:59:05.131470+00:00",
+  "python_version": "3.14.7",
+  "tests_run": 38,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "tests_passed": true,
+  "native_cobol_compiled": false,
+  "native_rexx_executed": false,
+  "zos_submitted": false,
+  "cobol_compiler_on_path": false,
+  "data_kind": "synthetic_fixture",
+  "demo": {
+    "return_code": 0,
+    "path": "demo",
+    "totals": {
+      "total": 14,
+      "settled": 4,
+      "pending": 2,
+      "rejected": 8,
+      "input": 14,
+      "settlement": 14
+    },
+    "holdings_reconciled": true
+  }
+}

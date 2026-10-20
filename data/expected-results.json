@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "derivation": "Manually reasoned, independently of settlement program output; amounts are integer paise.",
+  "input_count": 14,
+  "return_code": 0,
+  "counts": {
+    "SETTLED": 4,
+    "PENDING": 2,
+    "REJECTED": 8
+  },
+  "orders": [
+    {
+      "line": 1,
+      "order_id": "A-BUY1",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price": 10200,
+      "execution_price": 10100,
+      "reference_notional": 102000
+    },
+    {
+      "line": 2,
+      "order_id": "A-SELL1",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price": 10200,
+      "execution_price": 10100,
+      "reference_notional": 102000
+    },
+    {
+      "line": 3,
+      "order_id": "B-SELL1",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price": 20500,
+      "execution_price": 20300,
+      "reference_notional": 102500
+    },
+    {
+      "line": 4,
+      "order_id": "B-BUY1",
+      "status": "SETTLED",
+      "reason_code": "OK000",
+      "reference_price": 20500,
+      "execution_price": 20300,
+      "reference_notional": 102500
+    },
+    {
+      "line": 5,
+      "order_id": "PENDING1",
+      "status": "PENDING",
+      "reason_code": "PEND01",
+      "reference_price": 10200,
+      "execution_price": null,
+      "reference_notional": 71400
+    },
+    {
+      "line": 6,
+      "order_id": "HOLDFAIL",
+      "status": "REJECTED",
+      "reason_code": "HOLD01",
+      "reference_price": 10200,
+      "execution_price": null,
+      "reference_notional": 10189800
+    },
+    {
+      "line": 7,
+      "order_id": "A-BUY1",
+      "status": "REJECTED",
+      "reason_code": "DUP001",
+      "reference_price": null,
+      "execution_price": null,
+      "reference_notional": null
+    },
+    {
+      "line": 8,
+      "order_id": "BADSIDE",
+      "status": "REJECTED",
+      "reason_code": "SIDE001",
+      "reference_price": null,
+      "execution_price": null,
+      "reference_notional": null
+    },
+    {
+      "line": 9,
+      "order_id": "BADPRICE",
+      "status": "REJECTED",
+      "reason_code": "PRICE01",
+      "reference_price": 10200,
+      "execution_price": null,
+      "reference_notional": 10200
+    },
+    {
+      "line": 10,
+      "order_id": "BADQTY",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price": null,
+      "execution_price": null,
+      "reference_notional": null
+    },
+    {
+      "line": 11,
+      "order_id": "SHORT",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price": null,
+      "execution_price": null,
+      "reference_notional": null
+    },
+    {
+      "line": 12,
+      "order_id": "FUTURE1",
+      "status": "REJECTED",
+      "reason_code": "PRICE01",
+      "reference_price": null,
+      "execution_price": null,
+      "reference_notional": null
+    },
+    {
+      "line": 13,
+      "order_id": "BADDATE",
+      "status": "REJECTED",
+      "reason_code": "DATA001",
+      "reference_price": null,
+      "execution_price": null,
+      "reference_notional": null
+    },
+    {
+      "line": 14,
+      "order_id": "PENDING2",
+      "status": "PENDING",
+      "reason_code": "PEND01",
+      "reference_price": 20500,
+      "execution_price": null,
+      "reference_notional": 123000
+    }
+  ],
+  "settled_pairs": [
+    {
+      "buy_line": 1,
+      "sell_line": 2,
+      "stock_code": "ALPHA",
+      "quantity": 10,
+      "execution_price": 10100
+    },
+    {
+      "buy_line": 4,
+      "sell_line": 3,
+      "stock_code": "BETA",
+      "quantity": 5,
+      "execution_price": 20300
+    }
+  ],
+  "final_holdings": [
+    {
+      "client_id": "SELLER1",
+      "stock_code": "ALPHA",
+      "quantity": 90,
+      "reference_price": 10200,
+      "valuation": 918000
+    },
+    {
+      "client_id": "SELLER2",
+      "stock_code": "BETA",
+      "quantity": 15,
+      "reference_price": 20500,
+      "valuation": 307500
+    },
+    {
+      "client_id": "BUYER1",
+      "stock_code": "ALPHA",
+      "quantity": 15,
+      "reference_price": 10200,
+      "valuation": 153000
+    },
+    {
+      "client_id": "FUTCLNT",
+      "stock_code": "FUTURE",
+      "quantity": 2,
+      "reference_price": null,
+      "valuation": null
+    },
+    {
+      "client_id": "BUYER2",
+      "stock_code": "BETA",
+      "quantity": 5,
+      "reference_price": 20500,
+      "valuation": 102500
+    },
+    {
+      "client_id": "BUYER3",
+      "stock_code": "ALPHA",
+      "quantity": 0,
+      "reference_price": 10200,
+      "valuation": 0
+    }
+  ],
+  "valuation_timestamp": "20260102100000",
+  "notes": [
+    "Line 6 rejects before matching and reserves nothing; line 14 pending SELL does not reduce final holdings.",
+    "Line 11 is deliberately short; upload into FB59 pads it, but its missing basic fields still yield DATA001.",
+    "FUTURE prices cannot value FUTCLNT or evaluate FUTURE1 before their observation timestamp.",
+    "Reference notional values the order quantity; settled execution notional differs when seller limit differs from reference."
+  ]
+}

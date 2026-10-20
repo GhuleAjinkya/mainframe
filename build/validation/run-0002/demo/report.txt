@@ -1,0 +1,15 @@
+STKCP EXPLAINABLE RECONCILIATION
+Local Python report (REXX equivalent; REXX has not been executed).
+0005 PENDING1 PENDING PEND01: No compatible counter-order was available in this batch.
+0006 HOLDFAIL REJECTED HOLD01: SELL quantity exceeds available seeded holdings after reservations.
+0007 A-BUY1 REJECTED DUP001: Order ID duplicates an earlier structurally valid order.
+0008 BADSIDE REJECTED SIDE001: Side must be B (BUY) or S (SELL).
+0009 BADPRICE REJECTED PRICE01: Historical reference is missing, stale, or outside the allowed price band.
+0010 BADQTY REJECTED DATA001: Order record has invalid length, identifiers, numeric fields, or timestamp.
+0011 SHORT REJECTED DATA001: Order record has invalid length, identifiers, numeric fields, or timestamp.
+0012 FUTURE1 REJECTED PRICE01: Historical reference is missing, stale, or outside the allowed price band.
+0013 BADDATE REJECTED DATA001: Order record has invalid length, identifiers, numeric fields, or timestamp.
+0014 PENDING2 PENDING PEND01: No compatible counter-order was available in this batch.
+TOTAL=14 SETTLED=4 PENDING=2 REJECTED=8
+INPUT=14 AUDIT=14 SETTLEMENT=14
+BALANCE=PASS (input/audit/settlement counts, audit/settlement content, input tracing)
